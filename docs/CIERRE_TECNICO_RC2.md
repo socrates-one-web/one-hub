@@ -1,5 +1,7 @@
 # ONE HUB Community — Cierre técnico RC2
 
+> **ESTADO ACTUAL (25/10/2026):** la versión candidata **v1.0.0-rc.2 está publicada en GitHub como pre-release**, con CLEAN, DEMO, COMPLETO y SHA256SUMS.txt. Enlace oficial: https://github.com/socrates-one-web/one-hub/releases/tag/v1.0.0-rc.2. El resto de esta página conserva documentación histórica de la preparación privada previa al lanzamiento. No es certificación de producción.
+
 **Fecha:** 25/10/2026 · **Estado:** Candidato privado; todavía NO es una Release pública.
 
 ## Lo que el usuario ha validado

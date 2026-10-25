@@ -1,9 +1,9 @@
-## v1.0.0-rc.2 — Fuente publicada, paquetes en borrador (2026-10-25)
+## v1.0.0-rc.2 — Pre-release pública en GitHub (2026-10-25)
 
 - Código fuente RC2 completo publicado en `main` con CLEAN, DEMO, EMAILSEND, landing y jsPDF offline.
-- Borrador de GitHub Release con CLEAN, DEMO, COMPLETO y `SHA256SUMS.txt`; todavía **no es una Release pública**.
+- GitHub Release **pública, marcada como pre-release**, con CLEAN, DEMO, COMPLETO y `SHA256SUMS.txt`: https://github.com/socrates-one-web/one-hub/releases/tag/v1.0.0-rc.2.
 - El titular confirmó haber probado instalación y autorización en Ferozo.
-- Pendiente publicar el borrador como *pre-release*, verificar descargas y activar los canales de donación reales.
+- GitHub confirma que los cuatro adjuntos están en estado `uploaded` y publica su huella SHA-256. Sigue pendiente comprobar una descarga externa completa y activar los canales de donación reales.
 
 # CHANGELOG — ONE HUB Community
 

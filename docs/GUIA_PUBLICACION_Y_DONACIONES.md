@@ -1,52 +1,29 @@
-> **ACTUALIZACIÓN (25/10/2026):** el código fuente RC2 ya fue publicado en `main` (commit `151e528`). Los tres paquetes ZIP y `SHA256SUMS.txt` ya están adjuntos al **borrador** de `v1.0.0-rc.2`. **No** vuelva a cargar el código ni cree una segunda Release. Abrir [Releases](https://github.com/socrates-one-web/one-hub/releases), editar el borrador existente, marcar **This is a pre-release** y elegir **Publish release**. Verificar luego los cuatro enlaces públicos y sus SHA-256. El patrocinio continúa sujeto a aprobación de la cuenta real. La versión estable aún no se autoriza.
+# ONE HUB Community — Publicación y financiación
 
-# Publicación de ONE HUB Community y donaciones — pasos para el titular
+## Estado de publicación (25 de octubre de 2026)
 
-El repositorio oficial es [socrates-one-web/one-hub](https://github.com/socrates-one-web/one-hub).
+La edición Community **v1.0.0-rc.2 ya está publicada en GitHub como pre-release pública**. El código completo de CLEAN, DEMO, EMAILSEND y landing está disponible en la rama `main` bajo AGPL-3.0-only para el código original. GitHub confirmó cuatro adjuntos y sus hashes: CLEAN, DEMO, COMPLETO y SHA256SUMS.txt. **No crear una segunda Release RC2 ni reemplazar los ZIP existentes.**
 
-> **No publiques los ZIP RC2 como versión estable todavía:** antes hay que superar los controles de [CIERRE_TECNICO_RC2.md](CIERRE_TECNICO_RC2.md).
+**Release:** https://github.com/socrates-one-web/one-hub/releases/tag/v1.0.0-rc.2
 
-## 1. Subir el código auditado
-Una vez aprobados los paquetes:
-1. Abrir GitHub Desktop o Git para Windows y clonar el repositorio oficial.
-2. Descomprimir el paquete auditado en el repositorio, respetando la estructura `crm/`, `crm-demo/`, `assets/`, `index.php`, `LICENSE`, `THIRD_PARTY_NOTICES.md`.
-3. Conservar `.gitignore` del repositorio; ignora credenciales, backups y datos de ejecución, **pero no** la biblioteca local `crm/assets/js/vendor/jspdf.umd.min.js` y su equivalente DEMO.
-4. Inspeccionar el listado de archivos a subir; **nunca** añadir `config.php`, `.env`, volcados privados `admwebla_*.sql`, logs ni archivos cargados por usuarios.
-5. Hacer el commit y sincronizar `main` después de revisar los cambios. Una revisión por Pull Request es preferible.
+| Paquete / Package | Descarga / Download | SHA-256 |
+|---|---|---|
+| **CLEAN** | [ZIP CLEAN](https://github.com/socrates-one-web/one-hub/releases/download/v1.0.0-rc.2/ONE_HUB_COMMUNITY_CLEAN_v1.0.0-rc.2.zip) | `b9a0929b8d7449a7c3ee4b37a689b7acf4aba4c16d92d8eb2ed41d66742e16b0` |
+| **DEMO** | [ZIP DEMO](https://github.com/socrates-one-web/one-hub/releases/download/v1.0.0-rc.2/ONE_HUB_COMMUNITY_DEMO_v1.0.0-rc.2.zip) | `19584f3eaf2217cff0928b8dcd6e7889b94c42305fdb03fe771b0e1a14f83674` |
+| **COMPLETO** | [ZIP COMPLETO](https://github.com/socrates-one-web/one-hub/releases/download/v1.0.0-rc.2/ONE_HUB_COMMUNITY_COMPLETO_v1.0.0-rc.2.zip) | `b0e0598d9d0c1df56618b79ca5a534e42987f6361faf6102328f8a879b3db3c9` |
+| **Checksum file** | [SHA256SUMS.txt](https://github.com/socrates-one-web/one-hub/releases/download/v1.0.0-rc.2/SHA256SUMS.txt) | `215954cd09c11fd573a3f2a3b092caad7e67c8ae47dab7251e8a6ded229f4208` |
 
-## 2. Publicar GitHub Release
-1. Abrir [Releases](https://github.com/socrates-one-web/one-hub/releases) y elegir **Draft a new release**.
-2. Crear etiqueta `v1.0.0` **solo si la versión estable está validada**; antes usar `v1.0.0-rc.2` y marcar **pre-release**.
-3. Adjuntar los archivos CLEAN, DEMO y COMPLETO aprobados, más `SHA256SUMS.txt`.
-4. Incluir los requisitos mínimos, pasos de instalación, licencia AGPL-3.0 y advertencia de que DEMO no está preparada para envíos reales.
-5. Guardar como **draft** hasta confirmar las comprobaciones finales; no activar “Publish release” prematuramente.
+Se confirmó por el titular que ya se efectuó una prueba real de instalación y autorización en Ferozo. Las revisiones legales, la auditoría especializada de seguridad y la certificación de producción son controles independientes, necesarios antes de una versión estable.
 
-Referencia: https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository
+## Próximas acciones de difusión
 
-## 3. Activar donaciones
-**Importante:** la API de GitHub identifica al propietario `socrates-one-web` como una **cuenta de usuario (User)**, no como una organización. El titular debe acceder a https://github.com/sponsors e iniciar la solicitud desde esta cuenta o desde otra organización autorizada si decide transferir allí el repositorio. No asumir un perfil de patrocinio activo sin verificarlo.
+1. Actualizar las descargas del sitio https://os.socrates.la/ para que apunten a esta Release publicada; no alterar el sistema CLEAN/DEMO ya instalado.
+2. Verificar la descarga completa de cada ZIP desde fuera de GitHub y calcular los SHA-256 recibidos. GitHub ya publica los hashes y los archivos, pero esta prueba externa no está registrada.
+3. Presentar ONE HUB como **software gratuito y open source en versión candidata**, con licencia AGPL-3.0-only, y aclarar que las donaciones son voluntarias.
+4. Mantener un canal público de errores en https://github.com/socrates-one-web/one-hub/issues.
 
-GitHub solicita perfil, datos fiscales, método de pago y 2FA. Tras la aprobación, crear niveles opcionales de patrocinio y verificar la URL real.
+## Patrocinio
 
-**No publicar** `.github/FUNDING.yml` con direcciones supuestas. Después de la aprobación se podrá añadir:
-```yaml
-github: [NOMBRE_REAL_VERIFICADO]
-```
-Con nombre de usuario/organización cuyo perfil de patrocinio esté activo. Para otra plataforma, utilizar `custom` solo con URL válida y verificada.
+GitHub identifica a `socrates-one-web` como una cuenta de usuario, no como una organización. El titular puede solicitar habilitación en https://github.com/sponsors y completar datos bancarios, fiscales y verificaciones que correspondan. Solo cuando esté aprobada y se haya comprobado el enlace de pago, agregar `.github/FUNDING.yml` y anunciar las donaciones. No se incluye una URL de patrocinio sin verificación.
 
-Referencia: https://docs.github.com/en/sponsors/receiving-sponsorships-through-github-sponsors/setting-up-github-sponsors-for-your-organization
-
-## 4. Dar difusión
-Solo cuando las descargas públicas sean reales y los enlaces de patrocinio funcionen, actualizar la landing https://os.socrates.la/ y comunicar por ES/PT/EN:
-- Software gratuito y código fuente disponible con GNU AGPL-3.0.
-- Dos ediciones CLEAN y DEMO, características y requisitos de servidor.
-- Documentación e incidencias en GitHub.
-- Patrocinio voluntario, sin bloquear funciones gratuitas.
-
-## Verificaciones finales
-- [ ] Código auditado y subido al repositorio
-- [ ] Release con paquetes y hashes, publicada y descargable
-- [ ] Guía de instalación ensayada con ZIP descargado de la Release
-- [ ] Landing enlaza a Release y repositorio correctos
-- [ ] Patrocinio activo con pagos comprobados
-- [ ] Anuncio internacional publicado
+La publicación de la Release está completa; la validación de pagos y la actualización del sitio propio requieren pasos separados.

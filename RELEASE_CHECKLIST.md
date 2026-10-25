@@ -1,6 +1,6 @@
 # ONE HUB Community — Checklist de publicación
 
-**Estado:** PRE-LANZAMIENTO. Este checklist no certifica que el código esté listo para producción.
+**Estado:** RC2 pública publicada el 25/10/2026 (https://github.com/socrates-one-web/one-hub/releases/tag/v1.0.0-rc.2). No certifica que el código esté listo para producción.
 
 ## Software y derechos
 - [x] Titular confirmó autorización de redistribución de CRM, Project Manager, Document Manager y EMAILSEND (25/10/2026)
@@ -61,7 +61,7 @@
 - [x] DEMO RC2 empaquetado y adjuntado a una Release en borrador (aún sin descarga pública)
 - [x] `README.md`, `LICENSE`, `SECURITY.md`, `CONTRIBUTING.md`, `CHANGELOG.md`
 - [ ] Guías de instalación y uso en español, portugués brasileño e inglés
-- [ ] Publicar los archivos en GitHub Releases y registrar checksum SHA-256
+- [x] Publicar CLEAN, DEMO, COMPLETO y SHA256SUMS.txt en GitHub Release `v1.0.0-rc.2` como pre-release (25/10/2026)
 - [ ] Hacer instalación de prueba desde el mismo ZIP que recibirá la comunidad
 
 ## Difusión y financiación
@@ -77,5 +77,6 @@
 - [x] Código fuente incluido en 640 archivos del repositorio, 300 por edición; commit `151e528873a261da1a9c652017c4ffb630a62950`.
 - [x] jsPDF 4.2.1 local visible en los dos módulos `assets/js/vendor/`.
 - [x] Cuatro adjuntos (COMPLETO, CLEAN, DEMO y SHA256SUMS.txt) están en el borrador de `v1.0.0-rc.2`.
-- [ ] Publicar el borrador como **pre-release**; comprobar la URL pública y los SHA-256 descargados.
+- [x] Publicar el borrador como **pre-release**; GitHub confirma URL pública, cuatro adjuntos y SHA-256 asociados.
+- [ ] Comprobar descargas externas integrales, contrastar hash SHA-256 del archivo recibido y actualizar los enlaces desde os.socrates.la.
 - [ ] Verificar el perfil de GitHub Sponsors y agregar enlace real (sin URL inventada).
