@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800;900&family=Ubuntu+Condensed&family=Ubuntu+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/landing.css?v=1.7.0-community-admin">
+<link rel="stylesheet" href="assets/css/landing.css?v=1.7.1-hero-support-badge">
 </head>
 <body class="oh-landing" data-contact-status="">
 <svg class="oh-icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
@@ -125,6 +125,11 @@
             </div>
 
             <div class="oh-hero-visual reveal reveal-delay">
+                <!-- ONE HUB Community: sello clicable sobre el dashboard. Reutiliza el mismo diseño del sello de la sección de aportes. -->
+                <a class="oh-hero-support-badge" href="https://os.socrates.la/index.php#contribuir" aria-label="Apoyar ONE HUB Community">
+                    <span class="oh-support-seal" aria-hidden="true"><svg class="oh-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#oh-ico-heart"></use></svg><span>OPEN SOURCE<br><strong>COMMUNITY<br>SUPPORTED</strong></span></span>
+                    <span class="oh-hero-support-badge-label" data-i18n="fundingKicker">APOYA EL SOFTWARE LIBRE</span>
+                </a>
                 <div class="oh-browser hero-browser" data-lightbox="assets/landing/dashboard.png">
                     <div class="oh-browser-bar">
                         <div class="oh-browser-dots"><i></i><i></i><i></i></div>

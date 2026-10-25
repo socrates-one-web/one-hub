@@ -794,3 +794,43 @@ body.oh-landing{min-width:0}
 .oh-download-support-actions{display:flex;flex-wrap:wrap;gap:8px}
 .oh-download-support-actions a{border-radius:9px;padding:9px 12px;background:#fff;border:1px solid #ffc494;color:#003865;font:800 11px 'Exo 2',sans-serif;white-space:nowrap;text-decoration:none}
 .oh-download-support-actions a:hover{border-color:#ff5300;background:#fffaf3}
+
+/* ONE HUB Community v1.7.1 — clickable community support seal in hero empty space.
+   Keep original badge artwork, hero browser image and all existing elements unchanged. */
+.oh-hero-support-badge{
+  position:absolute;z-index:8;top:-183px;left:8%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  width:205px;max-width:100%;gap:5px;text-align:center;
+  color:#003865;text-decoration:none;cursor:pointer;
+}
+.oh-hero-support-badge .oh-support-seal{
+  margin:0 auto 3px;width:145px;height:145px;flex-shrink:0;
+  transition:transform .22s ease,box-shadow .22s ease;
+}
+.oh-hero-support-badge-label{
+  color:#ff5300;font:800 12px/1.25 'Exo 2',sans-serif;
+  text-transform:uppercase;letter-spacing:.07em;
+}
+.oh-hero-support-badge:hover .oh-support-seal,
+.oh-hero-support-badge:focus-visible .oh-support-seal{
+  transform:rotate(0deg) scale(1.055);
+  box-shadow:0 9px 32px rgba(237,139,0,.2);
+}
+.oh-hero-support-badge:hover .oh-hero-support-badge-label,
+.oh-hero-support-badge:focus-visible .oh-hero-support-badge-label{color:#003865}
+.oh-hero-support-badge:focus-visible{outline:3px solid #00a9e0;outline-offset:7px;border-radius:12px}
+/* On tablets the hero is single-column: keep the seal in the normal flow above the browser. */
+@media(max-width:1050px){
+  .oh-hero-support-badge{
+    position:relative;top:auto;left:auto;
+    width:205px;margin:0 auto 18px;
+  }
+}
+@media(max-width:480px){
+  .oh-hero-support-badge{width:190px;margin-bottom:10px}
+  .oh-hero-support-badge .oh-support-seal{width:120px;height:120px}
+  .oh-hero-support-badge-label{font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){
+  .oh-hero-support-badge .oh-support-seal{transition:none}
+}
