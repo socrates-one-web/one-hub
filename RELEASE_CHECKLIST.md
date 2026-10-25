@@ -27,6 +27,13 @@
 - [x] Descargar un PDF real desde CLEAN (confirmado por el usuario el 25/10/2026)
 - [ ] Revisar visualmente totales, tildes, logos y paginación en ambas versiones con casos representativos
 
+## Candidato de distribución RC1 privado
+- [x] Generados ZIP COMPLETO, CLEAN y DEMO para revisión privada con AGPL-3.0, DEMO V1.7 y PDF V2.1
+- [x] Validación estática: 407 PHP y 25 JavaScript sin errores de sintaxis; archivos ZIP íntegros
+- [x] No se encontraron configuraciones activas ni SQL de producción en estos ZIP
+- [ ] Probar desde cero los ZIP exactos del RC1 antes de publicar una Release
+- [ ] Revisar seguridad de carga de SVG y gestión de archivos públicos
+
 ## Entregables
 - [ ] Código fuente auditable y directorios documentados
 - [ ] CLEAN: paquete de instalación sin registros comerciales
