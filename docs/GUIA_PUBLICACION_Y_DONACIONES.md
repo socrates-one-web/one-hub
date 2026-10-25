@@ -24,7 +24,7 @@ Una vez aprobados los paquetes:
 Referencia: https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository
 
 ## 3. Activar donaciones
-Como el repositorio está bajo una organización, el propietario debe entrar a https://github.com/sponsors y seleccionar la **organización** correspondiente en el alta de patrocinio.
+**Importante:** la API de GitHub identifica al propietario `socrates-one-web` como una **cuenta de usuario (User)**, no como una organización. El titular debe acceder a https://github.com/sponsors e iniciar la solicitud desde esta cuenta o desde otra organización autorizada si decide transferir allí el repositorio. No asumir un perfil de patrocinio activo sin verificarlo.
 
 GitHub solicita perfil, datos fiscales, método de pago y 2FA. Tras la aprobación, crear niveles opcionales de patrocinio y verificar la URL real.
 
