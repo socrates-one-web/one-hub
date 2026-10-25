@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800;900&family=Ubuntu+Condensed&family=Ubuntu+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/landing.css?v=1.6.0-more-screens">
+<link rel="stylesheet" href="assets/css/landing.css?v=1.6.1-funding">
 </head>
 <body class="oh-landing" data-contact-status="">
 <svg class="oh-icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
@@ -213,9 +213,38 @@
     <div class="oh-oss-grid">
       <article class="oh-oss-card reveal"><span class="oh-oss-step">01</span><div class="oh-kicker">COMMUNITY</div><h3>CLEAN</h3><span class="oh-oss-email-check" data-i18n="ossEmailIncluded">✓ CRM + EMAILSEND incluidos</span><p data-i18n="ossCleanDesc">Para comenzar desde cero: CRM, proyectos, documentos, finanzas y EMAILSEND, sin registros empresariales.</p><ul><li data-i18n="ossCleanA">Código PHP + MySQL</li><li data-i18n="ossCleanB">Instalador desde cero</li><li data-i18n="ossCleanC">Sin datos de clientes</li></ul><a class="oh-btn oh-btn-primary" href="downloads/ONE_HUB_COMMUNITY_CLEAN_OS.zip" download data-i18n="ossCleanBtn">DESCARGAR CLEAN</a></article>
       <article class="oh-oss-card reveal"><span class="oh-oss-step">02</span><div class="oh-kicker">COMMUNITY</div><h3>DEMO</h3><span class="oh-oss-email-check" data-i18n="ossEmailIncluded">✓ CRM + EMAILSEND incluidos</span><p data-i18n="ossDemoDesc">Para conocer el ecosistema: clientes, negocios, proyectos, cotizaciones, métricas y campañas ficticias.</p><ul><li data-i18n="ossDemoA">Datos ficticios de muestra</li><li data-i18n="ossDemoB">Activar durante el instalador</li><li data-i18n="ossDemoC">Sin envío real de campañas</li></ul><a class="oh-btn oh-btn-primary" href="downloads/ONE_HUB_COMMUNITY_DEMO_OS.zip" download data-i18n="ossDemoBtn">DESCARGAR DEMO</a></article>
-      <article class="oh-oss-card oh-oss-card-support reveal" id="apoyar"><span class="oh-oss-step">03</span><div class="oh-kicker" data-i18n="ossSupportTag">COLABORA</div><h3 data-i18n="ossSupportTitle">Apoya el desarrollo</h3><p data-i18n="ossSupportDesc">ONE HUB es gratuito. La comunidad puede contribuir voluntariamente con mejoras, traducciones, documentación o patrocinios.</p><ul><li data-i18n="ossSupportA">Sin funciones bloqueadas</li><li data-i18n="ossSupportB">Soporte profesional opcional</li><li data-i18n="ossSupportC">Patrocinios próximamente</li></ul><a class="oh-btn oh-btn-light" href="manual.php" data-i18n="ossManualBtn">LEER MANUAL DE INSTALACIÓN</a></article>
+      <article class="oh-oss-card oh-oss-card-support reveal" id="apoyar"><span class="oh-oss-step">03</span><div class="oh-kicker" data-i18n="ossSupportTag">COLABORA</div><h3 data-i18n="ossSupportTitle">Apoya el desarrollo</h3><p data-i18n="ossSupportDesc">ONE HUB es gratuito. La comunidad puede contribuir voluntariamente con mejoras, traducciones, documentación o patrocinios.</p><ul><li data-i18n="ossSupportA">Sin funciones bloqueadas</li><li data-i18n="ossSupportB">Soporte profesional opcional</li><li data-i18n="ossSupportC">Plataformas de aporte disponibles</li></ul><a class="oh-btn oh-btn-light" href="#contribuir" data-i18n="fundingSeeOptions">VER FORMAS DE APOYAR</a></article>
     </div>
-    <p class="oh-oss-beta" data-i18n="ossRCNote">Versión candidata de revisión privada. Antes de publicarla en GitHub, revisa la licencia y las dependencias de terceros.</p>
+    <p class="oh-oss-beta" data-i18n="ossRCNote">ONE HUB Community v1.0.0 es gratuito y de código abierto. Los aportes son siempre voluntarios.</p>
+  </div>
+</section>
+
+<!-- ONE HUB Community · Aportes voluntarios · ES/PT/EN -->
+<section class="oh-section oh-funding-section" id="contribuir" aria-labelledby="funding-section-title">
+  <div class="oh-container">
+    <div class="oh-section-head centered reveal">
+      <span class="oh-kicker" data-i18n="fundingKicker">APOYA EL SOFTWARE LIBRE</span>
+      <h2 id="funding-section-title" data-i18n="fundingTitle">Ayúdanos a seguir creando.<br><span>Tecnología abierta para todos.</span></h2>
+      <p data-i18n="fundingIntro">Tu contribución voluntaria impulsa el mantenimiento, la seguridad, la documentación y nuevas funciones de ONE HUB Community. El software seguirá siendo gratuito para todos.</p>
+    </div>
+    <div class="oh-funding-grid">
+      <article class="oh-funding-card reveal">
+        <div class="oh-funding-platform-head"><span class="oh-funding-platform-icon" aria-hidden="true">GH</span><div><strong>GITHUB SPONSORS</strong><small data-i18n="fundingGitHubTag">APOYO A CÓDIGO ABIERTO</small></div></div>
+        <p data-i18n="fundingGitHubDesc">Patrocina el trabajo de Sócrates Creative Studio desde GitHub. Elige tu contribución y ayuda a sostener nuestros proyectos Open Source.</p>
+        <a class="oh-btn oh-btn-primary oh-funding-action" href="https://github.com/sponsors/socrates-one-web" target="_blank" rel="noopener noreferrer" data-i18n="fundingGitHubCta">PATROCINAR EN GITHUB</a>
+      </article>
+      <article class="oh-funding-card reveal">
+        <div class="oh-funding-platform-head"><span class="oh-funding-platform-icon oh-funding-icon-stripe" aria-hidden="true">S</span><div><strong>STRIPE</strong><small data-i18n="fundingStripeTag">APOYO INTERNACIONAL</small></div></div>
+        <p data-i18n="fundingStripeDesc">Realiza un aporte voluntario a través de nuestra página de Stripe y contribuye al desarrollo de herramientas gratuitas.</p>
+        <a class="oh-btn oh-btn-light oh-funding-action" href="https://donate.stripe.com/4gMfZj4Z1aFPaZQa4Cdwc00" target="_blank" rel="noopener noreferrer" data-i18n="fundingStripeCta">APORTAR CON STRIPE</a>
+      </article>
+      <article class="oh-funding-card reveal">
+        <div class="oh-funding-platform-head"><span class="oh-funding-platform-icon oh-funding-icon-mercado" aria-hidden="true">MP</span><div><strong>MERCADO PAGO</strong><small data-i18n="fundingMercadoTag">APOYOS DESDE BRASIL</small></div></div>
+        <p data-i18n="fundingMercadoDesc">Colabora desde Brasil mediante nuestro enlace de Mercado Pago y ayuda a mantener el proyecto en evolución.</p>
+        <a class="oh-btn oh-btn-light oh-funding-action" href="https://link.mercadopago.com.br/socratesone" target="_blank" rel="noopener noreferrer" data-i18n="fundingMercadoCta">APORTAR CON MERCADO PAGO</a>
+      </article>
+    </div>
+    <p class="oh-funding-note" data-i18n="fundingNote">Aportes 100 % voluntarios. No se desbloquean funciones ni se exige pago para descargar o utilizar ONE HUB Community.</p>
   </div>
 </section>
 
@@ -594,6 +623,7 @@
         <div class="oh-footer-links">
             <strong data-i18n="footerCommercial">Comunidad Open Source</strong>
             <a href="#descargas" data-i18n="requestDemo">Descargar gratis</a>
+            <a href="#contribuir" data-i18n="fundingFooterLink">APOYAR EL PROYECTO</a>
             <a href="#descargas" data-i18n="navImplementation">Implementación</a>
             <a href="mailto:info@socrates.la">info@socrates.la</a>
         </div>
@@ -635,6 +665,6 @@
 </div>
 
 <div class="oh-cookie" id="oh-cookie" hidden><div><strong data-i18n="cookieTitle">Tu privacidad importa</strong><span data-i18n="cookieText">Usamos únicamente cookies técnicas y de preferencia necesarias para el funcionamiento del sitio.</span></div><div class="oh-cookie-actions"><a href="cookies.php" data-i18n="cookieMore">Ver política</a><button type="button" id="cookie-accept" class="oh-btn oh-btn-primary" data-i18n="cookieAccept">Aceptar</button></div></div>
-<script src="assets/js/landing.js?v=1.6.0-more-screens" defer></script>
+<script src="assets/js/landing.js?v=1.6.1-funding" defer></script>
 </body>
 </html>

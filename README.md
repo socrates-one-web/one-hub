@@ -63,6 +63,8 @@ Los SHA-256 de esta tabla provienen de los adjuntos oficiales de GitHub. Verific
 - Contributions: [CONTRIBUTING.md](CONTRIBUTING.md)
 - Release checklist: [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md)
 - **GitHub Sponsors está activo / is live:** [Apoyar ONE HUB / Sponsor ONE HUB](https://github.com/sponsors/socrates-one-web). Aportes voluntarios; el software y todas sus funciones continúan gratuitos.
-- Otros medios de aporte (Stripe, Ko-fi o PIX) se incorporarán únicamente cuando sus enlaces oficiales estén configurados y comprobados.
+- **Stripe:** [Contribuir por Stripe](https://donate.stripe.com/4gMfZj4Z1aFPaZQa4Cdwc00).
+- **Mercado Pago (Brasil):** [Contribuir por Mercado Pago](https://link.mercadopago.com.br/socratesone).
+- Todos los aportes son voluntarios. Los enlaces de cobro de Stripe y Mercado Pago fueron facilitados por el titular y su funcionamiento de pago debe validarse en las plataformas.
 
 **Maintainer:** Sócrates Creative Studio / Socrates One Web Design LTDA · https://os.socrates.la/

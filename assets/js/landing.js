@@ -255,9 +255,48 @@
   Object.assign(i18n.pt, {navHome:'INÍCIO',navPlatform:'PLATAFORMA',navModules:'MÓDULOS',navEmailMarketing:'EMAILSEND',navCompare:'COMPARAR',navSecurity:'SEGURANÇA',navFaq:'FAQ',ossCleanBtn:'BAIXAR CLEAN',ossDemoBtn:'BAIXAR DEMO',ossManualBtn:'LER MANUAL DE INSTALAÇÃO',emailModuleLink:'CONHECER EMAILSEND',emailFooterLink:'EMAILSEND'});
   Object.assign(i18n.en, {navHome:'HOME',navPlatform:'PLATFORM',navModules:'MODULES',navEmailMarketing:'EMAILSEND',navCompare:'COMPARE',navSecurity:'SECURITY',navFaq:'FAQ',ossCleanBtn:'DOWNLOAD CLEAN',ossDemoBtn:'DOWNLOAD DEMO',ossManualBtn:'READ INSTALLATION MANUAL',emailModuleLink:'EXPLORE EMAILSEND',emailFooterLink:'EMAILSEND'});
 
+  /* GitHub Sponsors + Stripe + Mercado Pago — aportes voluntarios (ES / PT-BR / EN). */
+  Object.assign(i18n.es, {
+    ossSupportC:'GitHub Sponsors, Stripe y Mercado Pago activos',
+    ossRCNote:'ONE HUB Community v1.0.0 · Software gratuito y de código abierto. Los aportes son siempre voluntarios.',
+    fundingSeeOptions:'VER FORMAS DE APOYAR', fundingFooterLink:'APOYAR EL PROYECTO',
+    fundingKicker:'APOYA EL SOFTWARE LIBRE',
+    fundingTitle:'Ayúdanos a seguir creando.<br><span>Tecnología abierta para todos.</span>',
+    fundingIntro:'Tu contribución voluntaria impulsa el mantenimiento, la seguridad, la documentación y nuevas funciones de ONE HUB Community. El software seguirá siendo gratuito para todos.',
+    fundingGitHubTag:'APOYO A CÓDIGO ABIERTO', fundingGitHubDesc:'Patrocina el trabajo de Sócrates Creative Studio desde GitHub. Elige tu contribución y ayuda a sostener nuestros proyectos Open Source.', fundingGitHubCta:'PATROCINAR EN GITHUB',
+    fundingStripeTag:'APOYO INTERNACIONAL', fundingStripeDesc:'Realiza un aporte voluntario a través de nuestra página de Stripe y contribuye al desarrollo de herramientas gratuitas.', fundingStripeCta:'APORTAR CON STRIPE',
+    fundingMercadoTag:'APOYOS DESDE BRASIL', fundingMercadoDesc:'Colabora desde Brasil mediante nuestro enlace de Mercado Pago y ayuda a mantener el proyecto en evolución.', fundingMercadoCta:'APORTAR CON MERCADO PAGO',
+    fundingNote:'Aportes 100 % voluntarios. No se desbloquean funciones ni se exige pago para descargar o utilizar ONE HUB Community.'
+  });
+  Object.assign(i18n.pt, {
+    ossSupportC:'GitHub Sponsors, Stripe e Mercado Pago disponíveis',
+    ossRCNote:'ONE HUB Community v1.0.0 · Software gratuito e de código aberto. As contribuições são sempre voluntárias.',
+    fundingSeeOptions:'VER FORMAS DE APOIAR', fundingFooterLink:'APOIAR O PROJETO',
+    fundingKicker:'APOIE O SOFTWARE LIVRE',
+    fundingTitle:'Ajude-nos a continuar criando.<br><span>Tecnologia aberta para todos.</span>',
+    fundingIntro:'Sua contribuição voluntária ajuda a manter a segurança, a documentação e a desenvolver novas funções do ONE HUB Community. O software continuará gratuito para todos.',
+    fundingGitHubTag:'APOIO AO CÓDIGO ABERTO', fundingGitHubDesc:'Patrocine o trabalho do Sócrates Creative Studio pelo GitHub. Escolha sua contribuição e ajude a manter nossos projetos Open Source.', fundingGitHubCta:'PATROCINAR NO GITHUB',
+    fundingStripeTag:'APOIO INTERNACIONAL', fundingStripeDesc:'Faça uma contribuição voluntária pela nossa página do Stripe e ajude a desenvolver ferramentas gratuitas.', fundingStripeCta:'CONTRIBUIR COM STRIPE',
+    fundingMercadoTag:'CONTRIBUIÇÕES DO BRASIL', fundingMercadoDesc:'Apoie nosso trabalho no Brasil pelo link do Mercado Pago e ajude a manter o projeto em evolução.', fundingMercadoCta:'CONTRIBUIR COM MERCADO PAGO',
+    fundingNote:'Contribuições 100% voluntárias. Nenhuma função é bloqueada e nenhum pagamento é exigido para baixar ou utilizar o ONE HUB Community.'
+  });
+  Object.assign(i18n.en, {
+    ossSupportC:'GitHub Sponsors, Stripe and Mercado Pago available',
+    ossRCNote:'ONE HUB Community v1.0.0 · Free and open-source software. Contributions are always optional.',
+    fundingSeeOptions:'EXPLORE SUPPORT OPTIONS', fundingFooterLink:'SUPPORT THE PROJECT',
+    fundingKicker:'SUPPORT OPEN SOURCE',
+    fundingTitle:'Help us keep building.<br><span>Open technology for everyone.</span>',
+    fundingIntro:'Your voluntary support helps fund maintenance, security, documentation, and new ONE HUB Community features. The software remains free for everyone.',
+    fundingGitHubTag:'OPEN-SOURCE SPONSORSHIP', fundingGitHubDesc:'Sponsor Sócrates Creative Studio on GitHub. Choose your contribution and help us sustain our open-source projects.', fundingGitHubCta:'SPONSOR ON GITHUB',
+    fundingStripeTag:'INTERNATIONAL SUPPORT', fundingStripeDesc:'Make a voluntary contribution through our Stripe page and help us build free tools.', fundingStripeCta:'SUPPORT VIA STRIPE',
+    fundingMercadoTag:'SUPPORT FROM BRAZIL', fundingMercadoDesc:'Support the project from Brazil through our Mercado Pago link and help it grow.', fundingMercadoCta:'SUPPORT VIA MERCADO PAGO',
+    fundingNote:'Contributions are entirely voluntary. No features are locked and no payment is required to download or use ONE HUB Community.'
+  });
+
   const buttonIcon = (element) => {
     const key = element.getAttribute('data-i18n') || '';
     const href = element.getAttribute('href') || '';
+    if (href === '#contribuir' || /funding/i.test(key) || /github\.com\/sponsors|donate\.stripe\.com|link\.mercadopago\.com\.br/i.test(href)) return 'heart';
     if (href.includes('manual.php') || /Manual|manual/i.test(key)) return 'book';
     if (href.includes('mailto:')) return 'mail';
     if (element.hasAttribute('download') || href === '#descargas' || /Cta|Download|CleanBtn|DemoBtn|requestDemo/i.test(key)) return 'download';

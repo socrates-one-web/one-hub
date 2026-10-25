@@ -697,3 +697,21 @@ body.oh-landing{min-width:0}
   .oh-header .oh-container{width:calc(100% - 28px)}
   .oh-btn{white-space:normal}
 }
+
+/* ONE HUB Community — voluntary contribution section (GitHub, Stripe, Mercado Pago) */
+.oh-funding-section{background:linear-gradient(180deg,#f4f9fd 0%,#fff 100%);border-top:1px solid #dceaf4;scroll-margin-top:90px}
+.oh-funding-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
+.oh-funding-card{display:flex;flex-direction:column;gap:16px;padding:26px;background:#fff;border:1px solid #d5e6f1;border-radius:22px;box-shadow:0 12px 34px rgba(0,47,87,.075);min-width:0;transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease}
+.oh-funding-card:hover{transform:translateY(-3px);border-color:#00a9e0;box-shadow:0 19px 40px rgba(0,47,87,.11)}
+.oh-funding-platform-head{display:flex;gap:13px;align-items:center;min-height:54px}
+.oh-funding-platform-head strong{display:block;color:#003865;font:800 17px/1.2 'Exo 2',sans-serif;letter-spacing:0}
+.oh-funding-platform-head small{display:block;color:#638198;font-size:11px;font-weight:800;letter-spacing:.035em;margin-top:5px}
+.oh-funding-platform-icon{display:grid;place-items:center;flex:0 0 50px;width:50px;height:50px;border-radius:15px;background:#e8f3fb;color:#003865;font:900 16px/1 'Exo 2',sans-serif}
+.oh-funding-icon-stripe{background:#e9e8fb;color:#003865}
+.oh-funding-icon-mercado{background:#fff4cf;color:#003865}
+.oh-funding-card p{color:#516c82;font-size:15px;line-height:1.65;margin:0 0 auto}
+.oh-funding-action{min-height:46px;width:100%;justify-content:center;font-size:12px}
+.oh-funding-note{margin:24px auto 0;text-align:center;max-width:850px;color:#647f92;font-size:13px;line-height:1.65}
+@media(max-width:950px){.oh-funding-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.oh-funding-grid{grid-template-columns:1fr}.oh-funding-card{padding:24px}.oh-funding-section{scroll-margin-top:72px}}
+@media(prefers-reduced-motion:reduce){.oh-funding-card{transition:none}.oh-funding-card:hover{transform:none}}
