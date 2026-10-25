@@ -17,6 +17,8 @@
 4. `cron/security_maintenance.php` de ambas ediciones: impide acceso HTTP con clave vacía o de ejemplo.
 5. Eliminación de `diagnostico.php` (ambas ediciones) y `verificar-servidor.php` en los paquetes candidatos de distribución.
 
+6. Protección adicional de acceso web a los directorios `includes/`, `sql/`, `data/` y `emailsend/includes/` de CLEAN y DEMO, con `.htaccess` propios aunque no exista mod_rewrite.
+
 ## Comprobaciones automatizadas
 
 - Sintaxis: **404 archivos PHP y 25 JavaScript** sin errores.
@@ -28,9 +30,9 @@
 
 ## Archivos RC2 privados, pendientes de aprobación
 
-- **COMPLETO:** `ONE_HUB_COMMUNITY_COMPLETO_RC2_REVISION_PRIVADA.zip` SHA-256 `7d8d9aa68765d72c83ffda9b90be393ee2d50a3a9769e8cc4a27cae103588edb`
-- **CLEAN:** `ONE_HUB_COMMUNITY_CLEAN_RC2_REVISION_PRIVADA.zip` SHA-256 `f9821704b5ea875c7964cf5e22bae0db392575864581a39343b67e0f7b6d83b9`
-- **DEMO:** `ONE_HUB_COMMUNITY_DEMO_RC2_REVISION_PRIVADA.zip` SHA-256 `33f6de2d9666809e5a722181b213f5efcae1e2f2fab1b8a569382bccb079b575`
+- **COMPLETO:** `ONE_HUB_COMMUNITY_COMPLETO_RC2_REVISION_PRIVADA.zip` SHA-256 `88c4860681f57b5314307e402d6e0a3ff0d2e42932e1a599ac3cd9d31e5396be`
+- **CLEAN:** `ONE_HUB_COMMUNITY_CLEAN_RC2_REVISION_PRIVADA.zip` SHA-256 `755f1fa30ddc0fde504f53e29bcf3fb4b5c4587f2346da381e5e5cabd5bfa019`
+- **DEMO:** `ONE_HUB_COMMUNITY_DEMO_RC2_REVISION_PRIVADA.zip` SHA-256 `ba436ab2c764a3a620c5130b93a6a98ee2b5baa6f06ac25d8efcfc85c7aff55d`
 
 Estos archivos **no** están publicados en GitHub y esta documentación **no** garantiza seguridad integral.
 
