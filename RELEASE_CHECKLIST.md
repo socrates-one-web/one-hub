@@ -36,7 +36,8 @@
 - [ ] Completar pruebas de módulos, permisos y archivos del paquete instalado antes de publicar una Release
 - [x] Detectado SVG sin sanitizar; preparado parche RC1.1 para impedir nuevas cargas SVG por instalador y ajustes
 - [x] Instalar parche RC1.1 (confirmación del usuario el 25/10/2026)
-- [ ] Probar rechazo SVG y aceptación de PNG/JPG/WEBP, examinar SVG existentes y otros archivos públicos
+- [x] Funcionamiento general de CLEAN y DEMO confirmado por el usuario tras RC1.1 (25/10/2026)
+- [ ] Ejecutar prueba específica de rechazo SVG y aceptación PNG/JPG/WEBP; examinar SVG existentes y otros archivos públicos
 
 ## Limpieza posterior a la instalación (instancias públicas)
 - [ ] **Archivos de diagnóstico y de instalación:** comprobar que ya no son accesibles `verificar-servidor.php`, `crm/diagnostico.php`, `crm-demo/diagnostico.php`, `crm/install.php` y `crm-demo/install.php` una vez finalizada la instalación.
