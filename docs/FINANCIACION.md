@@ -4,11 +4,11 @@ ONE HUB Community distribuye gratuitamente su código bajo **GNU AGPL-3.0-only**
 
 ## Patrocinio
 
-Se prevé incorporar:
-- **GitHub Sponsors** para aportes de desarrolladores, personas y organizaciones.
-- Una segunda pasarela de donaciones internacionales verificada por el titular en Brasil.
+**GitHub Sponsors — APROBADO Y ACTIVO:** https://github.com/sponsors/socrates-one-web. El titular confirmó mediante captura del dashboard que el perfil figura como público, activo y con todos los requisitos cumplidos (25/10/2026). El enlace público permite ofrecer contribuciones voluntarias al proyecto.
 
-**Enlaces de cobro pendientes de activación y verificación.** No se solicitan pagos desde este documento.
+**En preparación:** Stripe, Ko-fi y/o PIX empresarial, que se añadirán tras recibir y comprobar los respectivos enlaces públicos.
+
+**GitHub Sponsors ya está habilitado y enlazado.** No se publican enlaces de otros métodos de aportes hasta estar comprobados.
 
 Los aportes no deben utilizarse para desbloquear funciones de una edición anunciada como completamente gratuita.
 
