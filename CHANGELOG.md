@@ -1,3 +1,10 @@
+## v1.0.0-rc.2 — Fuente publicada, paquetes en borrador (2026-10-25)
+
+- Código fuente RC2 completo publicado en `main` con CLEAN, DEMO, EMAILSEND, landing y jsPDF offline.
+- Borrador de GitHub Release con CLEAN, DEMO, COMPLETO y `SHA256SUMS.txt`; todavía **no es una Release pública**.
+- El titular confirmó haber probado instalación y autorización en Ferozo.
+- Pendiente publicar el borrador como *pre-release*, verificar descargas y activar los canales de donación reales.
+
 # CHANGELOG — ONE HUB Community
 
 Este registro documenta la preparación pública del proyecto. **No hay aún una versión estable publicada como GitHub Release**.

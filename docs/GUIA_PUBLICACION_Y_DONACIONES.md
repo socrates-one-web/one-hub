@@ -1,3 +1,5 @@
+> **ACTUALIZACIÓN (25/10/2026):** el código fuente RC2 ya fue publicado en `main` (commit `151e528`). Los tres paquetes ZIP y `SHA256SUMS.txt` ya están adjuntos al **borrador** de `v1.0.0-rc.2`. **No** vuelva a cargar el código ni cree una segunda Release. Abrir [Releases](https://github.com/socrates-one-web/one-hub/releases), editar el borrador existente, marcar **This is a pre-release** y elegir **Publish release**. Verificar luego los cuatro enlaces públicos y sus SHA-256. El patrocinio continúa sujeto a aprobación de la cuenta real. La versión estable aún no se autoriza.
+
 # Publicación de ONE HUB Community y donaciones — pasos para el titular
 
 El repositorio oficial es [socrates-one-web/one-hub](https://github.com/socrates-one-web/one-hub).

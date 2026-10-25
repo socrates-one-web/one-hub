@@ -46,3 +46,7 @@ Estos archivos **no** están publicados en GitHub y esta documentación **no** g
 - [ ] Activar GitHub Sponsors para la organización, verificar información bancaria/fiscal y URLs de donación.
 
 **La existencia de una licencia en GitHub no equivale a que el código ya esté publicado.**
+
+
+## Actualización de publicación de código — 25/10/2026
+El texto precedente describe el estado **histórico anterior** a la publicación en GitHub. Posteriormente se publicó el código fuente RC2 en `main`, con 640 archivos y commit `151e528873a261da1a9c652017c4ffb630a62950`. Se confirmó por el titular que la instalación y autorización en Ferozo ya fueron probadas. La Release `v1.0.0-rc.2` existe como **borrador con cuatro adjuntos**, sin fecha de publicación y sin descargas públicas. No equivale a `v1.0.0` estable. Son tareas separadas la revisión legal final y la activación verificada de donaciones.

@@ -56,10 +56,10 @@
 - [x] Prueba real de instalación y autorización en Ferozo completada (confirmación del titular, 25/10/2026); las verificaciones no especificadas permanecen independientes
 
 ## Entregables
-- [ ] Código fuente auditable y directorios documentados
-- [ ] CLEAN: paquete de instalación sin registros comerciales
-- [ ] DEMO: paquete con datos ficticios y transporte saliente desactivado
-- [ ] `README.md`, `LICENSE`, `SECURITY.md`, `CONTRIBUTING.md`, `CHANGELOG.md`
+- [x] Código fuente RC2 público en `main` (CLEAN, DEMO, landing y EMAILSEND), verificado 25/10/2026
+- [x] CLEAN RC2 empaquetado y adjuntado a una Release en borrador (aún sin descarga pública)
+- [x] DEMO RC2 empaquetado y adjuntado a una Release en borrador (aún sin descarga pública)
+- [x] `README.md`, `LICENSE`, `SECURITY.md`, `CONTRIBUTING.md`, `CHANGELOG.md`
 - [ ] Guías de instalación y uso en español, portugués brasileño e inglés
 - [ ] Publicar los archivos en GitHub Releases y registrar checksum SHA-256
 - [ ] Hacer instalación de prueba desde el mismo ZIP que recibirá la comunidad
@@ -72,3 +72,10 @@
 - [ ] Definir proceso público para Issues, cambios y seguimiento de nuevas versiones
 
 **No publicar como release estable ni activar la DEMO pública hasta completar los controles críticos.**
+
+## Registro de publicación GitHub (25/10/2026)
+- [x] Código fuente incluido en 640 archivos del repositorio, 300 por edición; commit `151e528873a261da1a9c652017c4ffb630a62950`.
+- [x] jsPDF 4.2.1 local visible en los dos módulos `assets/js/vendor/`.
+- [x] Cuatro adjuntos (COMPLETO, CLEAN, DEMO y SHA256SUMS.txt) están en el borrador de `v1.0.0-rc.2`.
+- [ ] Publicar el borrador como **pre-release**; comprobar la URL pública y los SHA-256 descargados.
+- [ ] Verificar el perfil de GitHub Sponsors y agregar enlace real (sin URL inventada).
