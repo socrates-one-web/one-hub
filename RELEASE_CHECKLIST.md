@@ -35,7 +35,8 @@
 - [ ] Probar los ZIP independientes CLEAN y DEMO si se publicarán separados
 - [ ] Completar pruebas de módulos, permisos y archivos del paquete instalado antes de publicar una Release
 - [x] Detectado SVG sin sanitizar; preparado parche RC1.1 para impedir nuevas cargas SVG por instalador y ajustes
-- [ ] Instalar y comprobar el parche RC1.1, y examinar SVG existentes y otros archivos públicos
+- [x] Instalar parche RC1.1 (confirmación del usuario el 25/10/2026)
+- [ ] Probar rechazo SVG y aceptación de PNG/JPG/WEBP, examinar SVG existentes y otros archivos públicos
 
 ## Entregables
 - [ ] Código fuente auditable y directorios documentados
