@@ -8,7 +8,7 @@ ONE HUB reúne en un mismo ecosistema la gestión de clientes, ventas, cotizacio
 
 ## Estado de publicación
 
-**PRE-LANZAMIENTO — Revisión de seguridad y licencias pendiente.**
+**PRE-LANZAMIENTO — Licencia del código propio definida; publicación de código pendiente de auditoría técnica y dependencias.**
 
 El software ya dispone de instalaciones de prueba CLEAN y DEMO, pero **el código fuente y los paquetes públicos todavía no están disponibles en este repositorio**. No uses las versiones de prueba como distribución pública hasta terminar la revisión de seguridad y derechos de terceros.
 
@@ -40,7 +40,7 @@ Las dos ediciones se distribuirán gratuitamente una vez completados los control
 
 ### Código, licencia y contribuciones
 
-La licencia de código abierto se publicará aquí **después de completar la revisión de autoría, dependencias y derechos sobre módulos integrados**. Hasta ese momento, la presencia de este repositorio no concede por sí sola una licencia de reutilización o redistribución del código.
+El titular ha elegido **GNU AGPL-3.0-only** para el código original de ONE HUB; el texto oficial está en [LICENSE](LICENSE). Las licencias de bibliotecas y materiales externos se describen en [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). **El código fuente de la aplicación no está publicado todavía**; siguen pendientes las pruebas finales de seguridad, compatibilidad y distribución.
 
 Consulta [SECURITY.md](SECURITY.md) para comunicar problemas de seguridad y [CONTRIBUTING.md](CONTRIBUTING.md) para conocer el estado de las contribuciones.
 
