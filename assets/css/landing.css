@@ -755,3 +755,42 @@ body.oh-landing{min-width:0}
 @media(max-width:760px){.oh-download-main{padding:28px 0 50px}.oh-download-panel{padding:22px}.oh-download-choices{grid-template-columns:1fr}.oh-download-header-inner{min-height:66px}}
 
 .oh-download-honeypot{position:absolute!important;left:-9999px!important;height:1px!important;width:1px!important;overflow:hidden!important;opacity:0!important;pointer-events:none!important}
+
+/* ONE HUB 1.7: community-backed support discovery (preserve existing NOVA colors) */
+.oh-nav .oh-nav-support{background:#ff5300;color:#fff;padding:10px 12px;border-radius:9px;font-weight:800;box-shadow:0 6px 16px rgba(255,83,0,.18)}
+.oh-nav .oh-nav-support:hover,.oh-nav .oh-nav-support:focus-visible{color:#fff;background:#e84a00;transform:translateY(-1px)}
+.oh-nav .oh-nav-support .oh-icon{stroke:#fff!important;fill:none}
+.oh-mobile-menu .oh-mobile-support-link{color:#e44b00;font-weight:900;border-top:1px solid #edf1f4;border-bottom:1px solid #edf1f4;background:#fff7f1;border-radius:10px;padding:8px 14px}
+.oh-mobile-menu .oh-mobile-support-link .oh-icon{color:#e44b00}
+.oh-hero-support-ribbon{display:flex;align-items:center;gap:12px;max-width:565px;padding:13px 14px;margin:19px 0 14px;border:1px solid rgba(255,199,44,.62);border-radius:15px;background:linear-gradient(95deg,rgba(255,83,0,.13),rgba(255,199,44,.06));color:inherit;text-decoration:none;transition:transform .18s ease,border-color .18s ease}
+.oh-hero-support-ribbon:hover{transform:translateY(-2px);border-color:#ff5300}
+.oh-hero-support-ribbon>.oh-icon{flex:0 0 auto;width:33px;height:33px;stroke:#ff5300;stroke-width:1.6}
+.oh-hero-support-ribbon>span:nth-child(2){display:flex;flex-direction:column;gap:3px;min-width:0}
+.oh-hero-support-ribbon strong{font:800 clamp(11px,1.15vw,15px)/1.3 'Exo 2',sans-serif;color:inherit;letter-spacing:0}
+.oh-hero-support-ribbon small{font-size:12px;color:inherit;opacity:.78}
+.oh-hero-support-arrow{margin-left:auto;color:#ff5300;font-size:20px}
+.oh-download-support-strip{display:flex;align-items:center;justify-content:center;gap:12px;padding:15px 18px;margin-top:24px;border-radius:14px;background:#fff4e8;border:1px solid #ffbb7d;color:#713400;text-decoration:none;font:800 12px/1.5 'Exo 2',sans-serif;text-align:center;letter-spacing:0}
+.oh-download-support-strip:hover{background:#ffe8cf;border-color:#ff5300}
+.oh-download-support-strip .oh-icon{width:22px;height:22px;stroke:#ff5300;flex-shrink:0}
+.oh-download-support-strip b{font-size:18px;color:#ff5300}
+.oh-support-seal{margin:0 auto 18px;width:145px;height:145px;border-radius:50%;border:2px dashed #ffbf6c;background:radial-gradient(circle,#fff 0%,#fff9ed 100%);box-shadow:0 4px 26px rgba(237,139,0,.1);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#003865;font:700 11px/1.25 'Exo 2',sans-serif;text-align:center;transform:rotate(-5deg)}
+.oh-support-seal strong{font-size:12px;letter-spacing:.06em}
+.oh-support-seal .oh-icon{width:31px;height:31px;stroke:#ff5300}
+.oh-footer-support-mini{display:flex;flex-direction:column;gap:7px;max-width:230px;padding:15px;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.19)}
+.oh-footer-support-mini strong{font:800 11px/1.35 'Exo 2',sans-serif;color:#fff;letter-spacing:0}
+.oh-footer-support-mini p{margin:0;color:rgba(255,255,255,.76);font-size:12px;line-height:1.5}
+.oh-footer-support-mini>a{color:#ffc72c;text-decoration:underline;text-underline-offset:3px;font-size:12px;font-weight:800}
+.oh-footer-support-icon .oh-icon{stroke:#ffc72c;width:24px;height:24px}
+.oh-footer-support-action{display:inline-flex;gap:8px;align-items:center;color:#ffc72c!important;font-weight:800}
+.oh-footer-support-action .oh-icon{width:17px;height:17px}
+@media(max-width:1240px){.oh-nav .oh-nav-support{padding:8px 9px;font-size:10px}}
+@media(max-width:700px){.oh-hero-support-ribbon{max-width:100%;padding:12px}.oh-hero-support-ribbon strong{font-size:12px}.oh-hero-support-ribbon small{font-size:11px}.oh-download-support-strip{flex-wrap:wrap;gap:8px}.oh-support-seal{width:120px;height:120px}.oh-footer-support-mini{max-width:100%;width:100%}}
+@media(prefers-reduced-motion:reduce){.oh-hero-support-ribbon{transition:none}.oh-hero-support-ribbon:hover{transform:none}}
+
+/* 1.7 private downloads page: optional contributions (always optional) */
+.oh-download-support-box{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:#fff6e8;border:1px solid #ffca92;padding:16px 17px;border-radius:15px;margin:23px 0}
+.oh-download-support-copy strong{font:900 12px/1.4 'Exo 2',sans-serif;color:#003865}
+.oh-download-support-copy p{font-size:12px;color:#566e82;margin:4px 0 0}
+.oh-download-support-actions{display:flex;flex-wrap:wrap;gap:8px}
+.oh-download-support-actions a{border-radius:9px;padding:9px 12px;background:#fff;border:1px solid #ffc494;color:#003865;font:800 11px 'Exo 2',sans-serif;white-space:nowrap;text-decoration:none}
+.oh-download-support-actions a:hover{border-color:#ff5300;background:#fffaf3}

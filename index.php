@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800;900&family=Ubuntu+Condensed&family=Ubuntu+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/landing.css?v=1.6.2-github-gate">
+<link rel="stylesheet" href="assets/css/landing.css?v=1.7.0-community-admin">
 </head>
 <body class="oh-landing" data-contact-status="">
 <svg class="oh-icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
@@ -52,6 +52,7 @@
             <a href="#comparar"><svg class="oh-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><use href="#oh-ico-compare"></use></svg><span data-i18n="navCompare">COMPARAR</span></a>
             <a href="#seguridad"><svg class="oh-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><use href="#oh-ico-shield"></use></svg><span data-i18n="navSecurity">SEGURIDAD</span></a>
             <a href="#faq"><svg class="oh-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><use href="#oh-ico-help"></use></svg><span data-i18n="navFaq">FAQ</span></a>
+            <a class="oh-nav-support" href="#contribuir"><svg class="oh-icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#oh-ico-heart"></use></svg><span data-i18n="navSupport">APOYAR</span></a>
         </nav>
 
         <div class="oh-header-actions">
@@ -83,6 +84,7 @@
         <a href="#comparar"><svg class="oh-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><use href="#oh-ico-compare"></use></svg><span data-i18n="navCompare">COMPARAR</span></a>
         <a href="#seguridad"><svg class="oh-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><use href="#oh-ico-shield"></use></svg><span data-i18n="navSecurity">SEGURIDAD</span></a>
         <a href="#faq"><svg class="oh-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><use href="#oh-ico-help"></use></svg><span data-i18n="navFaq">FAQ</span></a>
+        <a class="oh-mobile-support-link" href="#contribuir"><svg class="oh-icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#oh-ico-heart"></use></svg><span data-i18n="navSupport">APOYAR</span></a>
         <div class="oh-mobile-cta">
             <a class="oh-btn oh-btn-primary" href="#descargas" data-i18n="requestDemo">Descargar gratis</a>
         </div>
@@ -105,6 +107,7 @@
                     <a href="descargar.php" data-gated-download="clean" class="oh-btn oh-btn-primary oh-btn-lg" data-i18n="heroCta">Descargar gratis</a>
                     <a href="#emailsend" class="oh-btn oh-btn-light oh-btn-lg" data-i18n="heroSecondary">CONOCER EMAILSEND</a>
                 </div>
+                <a href="#contribuir" class="oh-hero-support-ribbon"><svg class="oh-icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#oh-ico-heart"></use></svg><span><strong data-i18n="heroSupportTitle">TU APOYO HACE CRECER EL CÓDIGO LIBRE</strong><small data-i18n="heroSupportText">Contribuye voluntariamente · GitHub · Stripe · Mercado Pago</small></span><span class="oh-hero-support-arrow" aria-hidden="true">↗</span></a>
                 <p class="oh-hero-note" data-i18n="heroNote">OPEN SOURCE: código disponible para descargar. CLEAN y DEMO gratis, sin pagos de licencia; las contribuciones al desarrollador son voluntarias.</p>
                 <div class="oh-open-source-signature" aria-label="ONE HUB Community Open Source"><span aria-hidden="true">&lt;/&gt;</span><div><strong data-i18n="ossSignatureTitle">OPEN SOURCE · CÓDIGO ABIERTO</strong><small data-i18n="ossSignatureText">Código fuente · Instalación propia · Descarga gratuita</small></div></div>
                 <div class="oh-hero-trust" aria-label="Ventajas de implementación">
@@ -216,6 +219,7 @@
       <article class="oh-oss-card reveal"><span class="oh-oss-step">02</span><div class="oh-kicker">COMMUNITY</div><h3>DEMO</h3><span class="oh-oss-email-check" data-i18n="ossEmailIncluded">✓ CRM + EMAILSEND incluidos</span><p data-i18n="ossDemoDesc">Para conocer el ecosistema: clientes, negocios, proyectos, cotizaciones, métricas y campañas ficticias.</p><ul><li data-i18n="ossDemoA">Datos ficticios de muestra</li><li data-i18n="ossDemoB">Activar durante el instalador</li><li data-i18n="ossDemoC">Sin envío real de campañas</li></ul><a class="oh-btn oh-btn-primary" href="descargar.php?edition=demo" data-gated-download="demo" data-i18n="ossDemoBtn">DESCARGAR DEMO</a></article>
       <article class="oh-oss-card oh-oss-card-support reveal" id="apoyar"><span class="oh-oss-step">03</span><div class="oh-kicker" data-i18n="ossSupportTag">COLABORA</div><h3 data-i18n="ossSupportTitle">Apoya el desarrollo</h3><p data-i18n="ossSupportDesc">ONE HUB es gratuito. La comunidad puede contribuir voluntariamente con mejoras, traducciones, documentación o patrocinios.</p><ul><li data-i18n="ossSupportA">Sin funciones bloqueadas</li><li data-i18n="ossSupportB">Soporte profesional opcional</li><li data-i18n="ossSupportC">Plataformas de aporte disponibles</li></ul><a class="oh-btn oh-btn-light" href="#contribuir" data-i18n="fundingSeeOptions">VER FORMAS DE APOYAR</a></article>
     </div>
+    <a href="#contribuir" class="oh-download-support-strip"><svg class="oh-icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#oh-ico-heart"></use></svg><span data-i18n="downloadSupportCta">Descargas gratuitas, desarrollo impulsado por la comunidad. APOYA EL PROYECTO</span><b aria-hidden="true">↗</b></a>
     <p class="oh-oss-beta" data-i18n="ossRCNote">ONE HUB Community v1.0.0 es gratuito y de código abierto. Los aportes son siempre voluntarios.</p>
   </div>
 </section>
@@ -224,6 +228,7 @@
 <section class="oh-section oh-funding-section" id="contribuir" aria-labelledby="funding-section-title">
   <div class="oh-container">
     <div class="oh-section-head centered reveal">
+      <div class="oh-support-seal" aria-label="Open Source · Community Supported"><svg class="oh-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#oh-ico-heart"></use></svg><span>OPEN SOURCE<br><strong>COMMUNITY<br>SUPPORTED</strong></span></div>
       <span class="oh-kicker" data-i18n="fundingKicker">APOYA EL SOFTWARE LIBRE</span>
       <h2 id="funding-section-title" data-i18n="fundingTitle">Ayúdanos a seguir creando.<br><span>Tecnología abierta para todos.</span></h2>
       <p data-i18n="fundingIntro">Tu contribución voluntaria impulsa el mantenimiento, la seguridad, la documentación y nuevas funciones de ONE HUB Community. El software seguirá siendo gratuito para todos.</p>
@@ -624,10 +629,11 @@
         <div class="oh-footer-links">
             <strong data-i18n="footerCommercial">Comunidad Open Source</strong>
             <a href="#descargas" data-i18n="requestDemo">Descargar gratis</a>
-            <a href="#contribuir" data-i18n="fundingFooterLink">APOYAR EL PROYECTO</a>
+            <a class="oh-footer-support-action" href="#contribuir"><svg class="oh-icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#oh-ico-heart"></use></svg><span data-i18n="fundingFooterLink">APOYAR EL PROYECTO</span></a>
             <a href="#descargas" data-i18n="navImplementation">Implementación</a>
             <a href="mailto:info@socrates.la">info@socrates.la</a>
         </div>
+        <div class="oh-footer-support-mini"><div class="oh-footer-support-icon" aria-hidden="true"><svg class="oh-icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#oh-ico-heart"></use></svg></div><strong data-i18n="footerSupportHeadline">TECNOLOGÍA LIBRE, APOYO VOLUNTARIO</strong><p data-i18n="footerSupportText">Ayuda a mantener ONE HUB gratuito para todos.</p><a href="https://github.com/sponsors/socrates-one-web" target="_blank" rel="noopener noreferrer" data-i18n="footerSupportButton">PATROCINAR EN GITHUB ↗</a></div>
         <div class="oh-footer-developer">
             <span data-i18n="developedBy">Desarrollado por</span>
             <img src="assets/img/logo-creative-blanco.png" alt="Sócrates AI Creative Studio">
@@ -666,6 +672,6 @@
 </div>
 
 <div class="oh-cookie" id="oh-cookie" hidden><div><strong data-i18n="cookieTitle">Tu privacidad importa</strong><span data-i18n="cookieText">Usamos únicamente cookies técnicas y de preferencia necesarias para el funcionamiento del sitio.</span></div><div class="oh-cookie-actions"><a href="cookies.php" data-i18n="cookieMore">Ver política</a><button type="button" id="cookie-accept" class="oh-btn oh-btn-primary" data-i18n="cookieAccept">Aceptar</button></div></div>
-<script src="assets/js/landing.js?v=1.6.2-github-gate" defer></script>
+<script src="assets/js/landing.js?v=1.7.0-community-admin" defer></script>
 </body>
 </html>

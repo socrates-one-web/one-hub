@@ -317,6 +317,23 @@
     downloadGateStart:'OPEN DOWNLOAD FORM'
   });
 
+  /* Visibilidad de patrocinio en navegación, hero, descargas y footer, ES/PT/EN. */
+  Object.assign(i18n.es, {
+    navSupport:'APOYAR',heroSupportTitle:'TU APOYO HACE CRECER EL CÓDIGO LIBRE',heroSupportText:'Contribuye voluntariamente · GitHub · Stripe · Mercado Pago',
+    downloadSupportCta:'DESCARGAS GRATUITAS · DESARROLLO COMUNITARIO · APOYA EL PROYECTO',
+    footerSupportHeadline:'TECNOLOGÍA LIBRE, APOYO VOLUNTARIO',footerSupportText:'Ayuda a mantener ONE HUB gratuito para todos.',footerSupportButton:'PATROCINAR EN GITHUB ↗'
+  });
+  Object.assign(i18n.pt, {
+    navSupport:'APOIAR',heroSupportTitle:'SEU APOIO FAZ O CÓDIGO ABERTO CRESCER',heroSupportText:'Contribuição voluntária · GitHub · Stripe · Mercado Pago',
+    downloadSupportCta:'DOWNLOADS GRATUITOS · DESENVOLVIMENTO COMUNITÁRIO · APOIE O PROJETO',
+    footerSupportHeadline:'TECNOLOGIA LIVRE, APOIO VOLUNTÁRIO',footerSupportText:'Ajude a manter o ONE HUB gratuito para todos.',footerSupportButton:'PATROCINAR NO GITHUB ↗'
+  });
+  Object.assign(i18n.en, {
+    navSupport:'SUPPORT',heroSupportTitle:'YOUR SUPPORT KEEPS OPEN SOURCE GROWING',heroSupportText:'Voluntary contributions · GitHub · Stripe · Mercado Pago',
+    downloadSupportCta:'FREE DOWNLOADS · COMMUNITY-POWERED DEVELOPMENT · SUPPORT THE PROJECT',
+    footerSupportHeadline:'OPEN TECHNOLOGY, VOLUNTARY SUPPORT',footerSupportText:'Help keep ONE HUB free for everyone.',footerSupportButton:'SPONSOR ON GITHUB ↗'
+  });
+
   const buttonIcon = (element) => {
     const key = element.getAttribute('data-i18n') || '';
     const href = element.getAttribute('href') || '';
