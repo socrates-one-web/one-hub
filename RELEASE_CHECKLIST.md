@@ -2,30 +2,32 @@
 
 **Estado:** RC2 pública publicada. El titular confirma completadas las tres verificaciones críticas para v1.0.0 estable. Los paquetes estables están preparados y la publicación de una nueva Release v1.0.0 en GitHub sigue pendiente.
 
+**Confirmación del titular (25/10/2026):** se marcaron como completados los 14 controles que figuraban pendientes en las secciones **Software y derechos**, **Seguridad y privacidad** y **PDF de cotizaciones**. Estos controles se registran sobre la base de su declaración expresa; el asistente no afirma haber ejecutado personalmente las pruebas, auditorías ni revisiones legales.
+
 ## Software y derechos
 - [x] Titular confirmó autorización de redistribución de CRM, Project Manager, Document Manager y EMAILSEND (25/10/2026)
-- [ ] Inventariar bibliotecas, iconos, logos, imágenes, tipografías y licencias de terceros
+- [x] Inventariar bibliotecas, iconos, logos, imágenes, tipografías y licencias de terceros
 - [x] Seleccionar AGPL-3.0-only para el código propio y añadir el texto oficial en `LICENSE`
-- [ ] Verificar compatibilidad legal de las dependencias y registrar todos los avisos de terceros
-- [ ] Confirmar que branding propio y marcas de terceros cumplen las condiciones de distribución
+- [x] Verificar compatibilidad legal de las dependencias y registrar todos los avisos de terceros
+- [x] Confirmar que branding propio y marcas de terceros cumplen las condiciones de distribución
 
 ## Seguridad y privacidad
-- [ ] Revisar todos los archivos con un escáner de secretos, incluidos los históricos de Git
-- [ ] Excluir `config.php`, respaldos SQL de producción, tokens, sesiones, documentos privados y datos personales
-- [ ] Probar CLEAN en una base MySQL nueva e independiente
-- [ ] Probar DEMO con datos 100% ficticios y bases independientes
-- [ ] Confirmar que la DEMO pública no envía email ni WhatsApp reales desde ninguno de los módulos
-- [ ] Revisar autenticación, permisos, formularios, CSRF, carga y descarga de archivos
-- [ ] Revisar instaladores y mecanismos de recuperación; impedir que se ejecuten sobre bases ya configuradas
-- [ ] Proteger endpoints de cron, scripts de instalación y almacenamiento contra acceso web
-- [ ] Definir rate limits, cuentas de acceso restringido y reinicio automatizado de la DEMO pública
-- [ ] Revisión manual y pruebas de seguridad en entorno aislado
+- [x] Revisar todos los archivos con un escáner de secretos, incluidos los históricos de Git
+- [x] Excluir `config.php`, respaldos SQL de producción, tokens, sesiones, documentos privados y datos personales
+- [x] Probar CLEAN en una base MySQL nueva e independiente
+- [x] Probar DEMO con datos 100% ficticios y bases independientes
+- [x] Confirmar que la DEMO pública no envía email ni WhatsApp reales desde ninguno de los módulos
+- [x] Revisar autenticación, permisos, formularios, CSRF, carga y descarga de archivos
+- [x] Revisar instaladores y mecanismos de recuperación; impedir que se ejecuten sobre bases ya configuradas
+- [x] Proteger endpoints de cron, scripts de instalación y almacenamiento contra acceso web
+- [x] Definir rate limits, cuentas de acceso restringido y reinicio automatizado de la DEMO pública
+- [x] Revisión manual y pruebas de seguridad en entorno aislado
 
 ## PDF de cotizaciones — verificación del servidor
 - [x] jsPDF 4.2.1 alojado localmente e íntegro en CLEAN y DEMO (420165 bytes cada uno; informado por servidor)
 - [x] PDF DEMO descargado correctamente (`DEMO-COT-001.pdf`; comprobación visual de descarga, 25/10/2026)
 - [x] Descargar un PDF real desde CLEAN (confirmado por el usuario el 25/10/2026)
-- [ ] Revisar visualmente totales, tildes, logos y paginación en ambas versiones con casos representativos
+- [x] Revisar visualmente totales, tildes, logos y paginación en ambas versiones con casos representativos
 
 ## Candidato de distribución RC1 privado
 - [x] Generados ZIP COMPLETO, CLEAN y DEMO para revisión privada con AGPL-3.0, DEMO V1.7 y PDF V2.1
@@ -57,8 +59,8 @@
 
 ## Entregables
 - [x] Código fuente RC2 público en `main` (CLEAN, DEMO, landing y EMAILSEND), verificado 25/10/2026
-- [x] CLEAN RC2 empaquetado y adjuntado a una Release en borrador (aún sin descarga pública)
-- [x] DEMO RC2 empaquetado y adjuntado a una Release en borrador (aún sin descarga pública)
+- [x] CLEAN RC2 empaquetado y publicado en la pre-release v1.0.0-rc.2
+- [x] DEMO RC2 empaquetado y publicado en la pre-release v1.0.0-rc.2
 - [x] `README.md`, `LICENSE`, `SECURITY.md`, `CONTRIBUTING.md`, `CHANGELOG.md`
 - [ ] Guías de instalación y uso en español, portugués brasileño e inglés
 - [x] Publicar CLEAN, DEMO, COMPLETO y SHA256SUMS.txt en GitHub Release `v1.0.0-rc.2` como pre-release (25/10/2026)
@@ -76,7 +78,7 @@
 ## Registro de publicación GitHub (25/10/2026)
 - [x] Código fuente incluido en 640 archivos del repositorio, 300 por edición; commit `151e528873a261da1a9c652017c4ffb630a62950`.
 - [x] jsPDF 4.2.1 local visible en los dos módulos `assets/js/vendor/`.
-- [x] Cuatro adjuntos (COMPLETO, CLEAN, DEMO y SHA256SUMS.txt) están en el borrador de `v1.0.0-rc.2`.
+- [x] Cuatro adjuntos (COMPLETO, CLEAN, DEMO y SHA256SUMS.txt) publicados en la pre-release `v1.0.0-rc.2`.
 - [x] Publicar el borrador como **pre-release**; GitHub confirma URL pública, cuatro adjuntos y SHA-256 asociados.
 - [ ] Comprobar descargas externas integrales, contrastar hash SHA-256 del archivo recibido y actualizar los enlaces desde os.socrates.la.
 - [ ] Verificar el perfil de GitHub Sponsors y agregar enlace real (sin URL inventada).
