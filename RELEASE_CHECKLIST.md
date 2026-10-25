@@ -67,9 +67,9 @@
 - [ ] Hacer instalación de prueba desde el mismo ZIP que recibirá la comunidad
 
 ## Difusión y financiación
-- [ ] Perfil de GitHub Sponsors aprobado para el titular autorizado
+- [x] Perfil de GitHub Sponsors aprobado para el titular autorizado — titular confirmó estado público/activo (25/10/2026)
 - [ ] Método alternativo de aportes internacionales verificado y activo
-- [ ] Añadir enlaces reales a `.github/FUNDING.yml` solo después de comprobarlos
+- [x] Añadir enlaces reales a `.github/FUNDING.yml` solo después de comprobarlos — activado para `socrates-one-web`; otros enlaces futuros permanecen pendientes
 - [ ] Publicar campaña de lanzamiento ES/PT/EN y video de demostración
 - [ ] Definir proceso público para Issues, cambios y seguimiento de nuevas versiones
 
@@ -81,7 +81,7 @@
 - [x] Cuatro adjuntos (COMPLETO, CLEAN, DEMO y SHA256SUMS.txt) publicados en la pre-release `v1.0.0-rc.2`.
 - [x] Publicar el borrador como **pre-release**; GitHub confirma URL pública, cuatro adjuntos y SHA-256 asociados.
 - [ ] Comprobar descargas externas integrales, contrastar hash SHA-256 del archivo recibido y actualizar los enlaces desde os.socrates.la.
-- [ ] Verificar el perfil de GitHub Sponsors y agregar enlace real (sin URL inventada).
+- [x] Verificar el perfil de GitHub Sponsors y agregar enlace real (sin URL inventada). — https://github.com/sponsors/socrates-one-web
 
 ## Aprobación para versión estable v1.0.0 — 25/10/2026
 - [x] Seguridad, privacidad y controles de acceso: resueltos conforme a confirmación expresa del titular.
@@ -100,3 +100,10 @@ Detalles y checksums en [Preparación v1.0.0](docs/PREPARACION_V1.0.0_ESTABLE.md
 - [x] RC2 preservada como pre-release histórica.
 - [ ] Prueba independiente de descarga de ZIP desde navegador externo (no equivale a la disponibilidad verificada mediante API GitHub).
 
+
+## Financiación — GitHub Sponsors (25/10/2026)
+- [x] Perfil GitHub Sponsors aprobado, activo y público según captura del dashboard remitida por el titular.
+- [x] Creado `.github/FUNDING.yml` con `github: socrates-one-web` para mostrar el patrocinio del repositorio.
+- [x] README y documento de financiación actualizados para enlazar la página pública.
+- [ ] Confirmar visualmente el botón Sponsor en la página pública del repositorio (la conexión no permite inspeccionar el navegador).
+- [ ] Integrar el enlace en la instalación web de Ferozo y agregar Stripe, Ko-fi o PIX cuando sus enlaces oficiales sean remitidos.
