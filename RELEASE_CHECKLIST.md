@@ -53,7 +53,7 @@
 - [x] RC2 privado completo, CLEAN y DEMO generados; nueva protección Apache/IIS de archivos subidos y carpetas privadas
 - [x] Pruebas locales: SVG y PHP subidos 403, PNG 200; crons con clave vacía/incorrecta 403 y válida 200
 - [x] Biblioteca jsPDF incluida y `.gitignore` corregido para conservar los recursos dentro de `assets/js/vendor/`
-- [ ] Instalar y verificar parche RC2 en Ferozo y probar los ZIP completos exactos en MySQL aislada
+- [x] Prueba real de instalación y autorización en Ferozo completada (confirmación del titular, 25/10/2026); las verificaciones no especificadas permanecen independientes
 
 ## Entregables
 - [ ] Código fuente auditable y directorios documentados
