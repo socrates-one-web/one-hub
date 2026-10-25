@@ -3,7 +3,7 @@
 **Estado:** PRE-LANZAMIENTO. Este checklist no certifica que el código esté listo para producción.
 
 ## Software y derechos
-- [ ] Confirmar titularidad y autorización para redistribuir el código de CRM, Project Manager, Document Manager y EMAILSEND
+- [x] Titular confirmó autorización de redistribución de CRM, Project Manager, Document Manager y EMAILSEND (25/10/2026)
 - [ ] Inventariar bibliotecas, iconos, logos, imágenes, tipografías y licencias de terceros
 - [x] Seleccionar AGPL-3.0-only para el código propio y añadir el texto oficial en `LICENSE`
 - [ ] Verificar compatibilidad legal de las dependencias y registrar todos los avisos de terceros
@@ -20,6 +20,11 @@
 - [ ] Proteger endpoints de cron, scripts de instalación y almacenamiento contra acceso web
 - [ ] Definir rate limits, cuentas de acceso restringido y reinicio automatizado de la DEMO pública
 - [ ] Revisión manual y pruebas de seguridad en entorno aislado
+
+## PDF de cotizaciones — verificación del servidor
+- [x] jsPDF 4.2.1 alojado localmente e íntegro en CLEAN y DEMO (420165 bytes cada uno; informado por servidor)
+- [x] PDF DEMO descargado correctamente (`DEMO-COT-001.pdf`; comprobación visual de descarga, 25/10/2026)
+- [ ] Descargar un PDF real desde CLEAN y revisar totales, tildes, logos y paginación en ambas versiones
 
 ## Entregables
 - [ ] Código fuente auditable y directorios documentados
