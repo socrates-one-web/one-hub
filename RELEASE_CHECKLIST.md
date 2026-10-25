@@ -5,7 +5,8 @@
 ## Software y derechos
 - [ ] Confirmar titularidad y autorización para redistribuir el código de CRM, Project Manager, Document Manager y EMAILSEND
 - [ ] Inventariar bibliotecas, iconos, logos, imágenes, tipografías y licencias de terceros
-- [ ] Seleccionar una licencia Open Source y añadir un archivo `LICENSE` válido
+- [x] Seleccionar AGPL-3.0-only para el código propio y añadir el texto oficial en `LICENSE`
+- [ ] Verificar compatibilidad legal de las dependencias y registrar todos los avisos de terceros
 - [ ] Confirmar que branding propio y marcas de terceros cumplen las condiciones de distribución
 
 ## Seguridad y privacidad
