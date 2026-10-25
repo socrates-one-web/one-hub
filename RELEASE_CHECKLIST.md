@@ -49,6 +49,12 @@
 - [x] Sintaxis 407 PHP y 25 JS propios; integridad ZIP e inspección preliminar de patrones de credenciales
 - [ ] Auditoría dinámica e instalación de los ZIP RC1.1 exactos antes de publicación pública
 
+## RC2 privado y refuerzo de seguridad
+- [x] RC2 privado completo, CLEAN y DEMO generados; nueva protección Apache/IIS de archivos subidos y carpetas privadas
+- [x] Pruebas locales: SVG y PHP subidos 403, PNG 200; crons con clave vacía/incorrecta 403 y válida 200
+- [x] Biblioteca jsPDF incluida y `.gitignore` corregido para conservar los recursos dentro de `assets/js/vendor/`
+- [ ] Instalar y verificar parche RC2 en Ferozo y probar los ZIP completos exactos en MySQL aislada
+
 ## Entregables
 - [ ] Código fuente auditable y directorios documentados
 - [ ] CLEAN: paquete de instalación sin registros comerciales
