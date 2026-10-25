@@ -42,3 +42,8 @@ Thumbs.db
 node_modules/
 # Ignore only root Composer dependencies. Preserve crm/assets/js/vendor/jspdf.umd.min.js
 /vendor/
+
+# Download lead capture: never commit submitted personal data
+/_private_downloads/*
+!/_private_downloads/.htaccess
+!/_private_downloads/index.php
