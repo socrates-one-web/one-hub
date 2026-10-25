@@ -715,3 +715,43 @@ body.oh-landing{min-width:0}
 @media(max-width:950px){.oh-funding-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.oh-funding-grid{grid-template-columns:1fr}.oh-funding-card{padding:24px}.oh-funding-section{scroll-margin-top:72px}}
 @media(prefers-reduced-motion:reduce){.oh-funding-card{transition:none}.oh-funding-card:hover{transform:none}}
+
+/* Download gateway prompt on the existing ONE HUB Community landing */
+.oh-download-gate-intro{display:flex;align-items:center;gap:14px;padding:17px 20px;border:1px solid #cce3f2;border-radius:15px;background:#eaf6fc;margin:0 0 24px;color:#003865;font-weight:700;font-size:13px;line-height:1.5}
+.oh-download-gate-intro .oh-icon{width:24px;height:24px;flex-shrink:0;color:#0074c7}
+.oh-download-gate-intro span{flex:1}
+.oh-download-gate-intro a{flex-shrink:0;display:inline-flex;justify-content:center;border-radius:9px;background:#003865;color:#fff;padding:11px 15px;text-align:center;text-decoration:none;font-size:12px;font-weight:800}
+.oh-download-gate-intro a:hover{background:#0074c7;color:#fff}
+@media(max-width:720px){.oh-download-gate-intro{flex-wrap:wrap}.oh-download-gate-intro a{width:100%}}
+/* Dedicated download form — matching the existing logo, typography and corporate palette. */
+.oh-download-page{background:linear-gradient(150deg,#e8f4fc,#fff 55%,#f4fbed);min-height:100vh}
+.oh-download-header{background:#fff;border-bottom:1px solid #d8e8f3;box-shadow:0 3px 15px rgba(0,47,87,.04)}
+.oh-download-header-inner{display:flex;align-items:center;justify-content:space-between;min-height:84px;gap:16px}
+.oh-download-brand img{width:min(175px,38vw)}
+.oh-download-languages{display:flex;gap:8px}.oh-download-languages a{font-size:12px;font-weight:800;color:#003865;border:1px solid #d6e5ef;padding:8px 10px;border-radius:9px}
+.oh-download-languages a[aria-current="page"]{background:#003865;color:#fff;border-color:#003865}
+.oh-download-main{padding:62px 0 80px}
+.oh-download-panel{max-width:930px;background:#fff;margin:auto;padding:clamp(24px,4vw,54px);border-radius:25px;border:1px solid #d6e8f4;box-shadow:0 22px 80px rgba(0,47,87,.12)}
+.oh-download-panel h1{margin:13px 0 10px;font:900 clamp(30px,4.5vw,52px)/1.12 'Exo 2',sans-serif;color:#003865}
+.oh-download-subtitle{margin:0 0 28px;color:#547188;font-size:17px;line-height:1.6}
+.oh-download-form{display:grid;gap:20px}
+.oh-download-field{display:grid;gap:8px}.oh-download-field span{font-size:13px;font-weight:800;color:#003865}
+.oh-download-field input,.oh-download-field select{display:block;width:100%;min-height:50px;border:1px solid #c5d8e7;border-radius:11px;background:#fafdff;color:#17394f;font:500 16px 'Ubuntu Sans',Arial,sans-serif;padding:11px 14px}
+.oh-download-field input:focus,.oh-download-field select:focus{outline:3px solid rgba(0,169,224,.2);border-color:#0074c7}
+.oh-download-consent{display:flex;align-items:flex-start;gap:11px;color:#526f83;font-size:13px;line-height:1.6;cursor:pointer}
+.oh-download-consent input{width:18px;height:18px;flex-shrink:0;accent-color:#003865;margin-top:3px}
+.oh-download-consent a,.oh-download-footer a{color:#0074c7;text-decoration:underline}
+.oh-download-submit{width:100%;min-height:54px;justify-content:center}
+.oh-download-error{padding:15px 18px;border:1px solid #dfacac;background:#fff0f0;color:#8f2626;border-radius:11px;font-size:14px}
+.oh-download-small{color:#617c8b;font-size:12px;line-height:1.5;margin:20px 0 0}
+.oh-download-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.oh-download-option{border:1px solid #d1e4f1;border-radius:17px;padding:20px;display:flex;flex-direction:column;gap:20px;justify-content:space-between;background:#f8fbfd}
+.oh-download-option-chosen{border-color:#00a9e0;box-shadow:0 0 0 2px rgba(0,169,224,.1)}
+.oh-download-option h2{font:800 16px/1.4 'Exo 2',sans-serif;color:#003865;margin:0}
+.oh-download-option .oh-btn{width:100%;min-height:45px;font-size:11px}
+.oh-download-footer{border-top:1px solid #e1ebf2;margin:30px 0 0;padding:20px 0 0;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font-size:13px}
+.oh-download-footer p{width:100%;margin:0;color:#547188}
+.oh-download-copyright{text-align:center;padding:0 18px 35px;font-size:12px;color:#60788a}
+@media(max-width:760px){.oh-download-main{padding:28px 0 50px}.oh-download-panel{padding:22px}.oh-download-choices{grid-template-columns:1fr}.oh-download-header-inner{min-height:66px}}
+
+.oh-download-honeypot{position:absolute!important;left:-9999px!important;height:1px!important;width:1px!important;overflow:hidden!important;opacity:0!important;pointer-events:none!important}

@@ -293,6 +293,30 @@
     fundingNote:'Contributions are entirely voluntary. No features are locked and no payment is required to download or use ONE HUB Community.'
   });
 
+
+  /* Descargas v1.0.0 directas de GitHub — solicitud de nombre/email antes de mostrar los enlaces. */
+  Object.assign(i18n.es, {
+    ossKicker:'OPEN SOURCE · DESCARGAS OFICIALES DE GITHUB',
+    ossIntro:'Elige CLEAN o DEMO, registra tu nombre y correo y descarga los paquetes oficiales desde GitHub. Sin pagos obligatorios.',
+    ossCleanBtn:'ACCEDER A CLEAN',ossDemoBtn:'ACCEDER A DEMO',
+    downloadGateIntro:'Nombre y correo antes de descargar · ZIP oficiales en GitHub · Sin publicidad obligatoria',
+    downloadGateStart:'IR AL FORMULARIO'
+  });
+  Object.assign(i18n.pt, {
+    ossKicker:'CÓDIGO ABERTO · DOWNLOADS OFICIAIS NO GITHUB',
+    ossIntro:'Escolha CLEAN ou DEMO, informe nome e e-mail e baixe os pacotes oficiais pelo GitHub. Sem pagamentos obrigatórios.',
+    ossCleanBtn:'ACESSAR CLEAN',ossDemoBtn:'ACESSAR DEMO',
+    downloadGateIntro:'Nome e e-mail antes do download · ZIPs oficiais no GitHub · Sem anúncios obrigatórios',
+    downloadGateStart:'IR AO FORMULÁRIO'
+  });
+  Object.assign(i18n.en, {
+    ossKicker:'OPEN SOURCE · OFFICIAL GITHUB DOWNLOADS',
+    ossIntro:'Choose CLEAN or DEMO, register your name and email, and download the official files from GitHub. No payment required.',
+    ossCleanBtn:'GET CLEAN',ossDemoBtn:'GET DEMO',
+    downloadGateIntro:'Name and email before download · Official GitHub ZIPs · No mandatory marketing',
+    downloadGateStart:'OPEN DOWNLOAD FORM'
+  });
+
   const buttonIcon = (element) => {
     const key = element.getAttribute('data-i18n') || '';
     const href = element.getAttribute('href') || '';
@@ -346,6 +370,7 @@
     const langInput = document.getElementById('landing-language');
     if (langInput) langInput.value = current;
     document.querySelectorAll('.oh-legal-links a').forEach(a => { const base = a.getAttribute('href')?.split('?')[0]; if (base) a.setAttribute('href', `${base}?lang=${current}`); });
+    document.querySelectorAll('[data-gated-download]').forEach(a => { const edition = a.dataset.gatedDownload || 'clean'; a.href = `descargar.php?lang=${current}&edition=${edition}`; });
     try { localStorage.setItem('onehub_public_language', current); } catch(_) {}
     decorateButtons();
     showFormStatus();

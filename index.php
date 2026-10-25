@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800;900&family=Ubuntu+Condensed&family=Ubuntu+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/landing.css?v=1.6.1-funding">
+<link rel="stylesheet" href="assets/css/landing.css?v=1.6.2-github-gate">
 </head>
 <body class="oh-landing" data-contact-status="">
 <svg class="oh-icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +60,7 @@
                 <button type="button" class="oh-lang" data-lang="pt" aria-label="Português"><img src="assets/img/flag-pt.png" alt=""></button>
                 <button type="button" class="oh-lang" data-lang="en" aria-label="English"><img src="assets/img/flag-en.png" alt=""></button>
             </div>
-            <a class="oh-btn oh-btn-primary oh-demo-link" href="#descargas" data-i18n="requestDemo">Descargar gratis</a>
+            <a class="oh-btn oh-btn-primary oh-demo-link" href="descargar.php" data-gated-download="clean" data-i18n="requestDemo">Descargar gratis</a>
             <button class="oh-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
@@ -102,7 +102,7 @@
                 <h1 data-i18n="heroTitle">Todo tu negocio conectado.<br><span>Open Source y gratuito.</span></h1>
                 <p class="oh-hero-lead" data-i18n="heroLead">CRM, ventas, proyectos, documentos, finanzas y EMAILSEND para email marketing. Descarga el código fuente, instálalo en tu servidor y personaliza tu plataforma.</p>
                 <div class="oh-hero-actions">
-                    <a href="#descargas" class="oh-btn oh-btn-primary oh-btn-lg" data-i18n="heroCta">Descargar gratis</a>
+                    <a href="descargar.php" data-gated-download="clean" class="oh-btn oh-btn-primary oh-btn-lg" data-i18n="heroCta">Descargar gratis</a>
                     <a href="#emailsend" class="oh-btn oh-btn-light oh-btn-lg" data-i18n="heroSecondary">CONOCER EMAILSEND</a>
                 </div>
                 <p class="oh-hero-note" data-i18n="heroNote">OPEN SOURCE: código disponible para descargar. CLEAN y DEMO gratis, sin pagos de licencia; las contribuciones al desarrollador son voluntarias.</p>
@@ -206,13 +206,14 @@
 <section class="oh-section oh-oss-downloads" id="descargas">
   <div class="oh-container">
     <div class="oh-section-head centered reveal">
-      <span class="oh-kicker" data-i18n="ossKicker">OPEN SOURCE · DESCARGA GRATUITA</span>
+      <span class="oh-kicker" data-i18n="ossKicker">OPEN SOURCE · DESCARGAS OFICIALES DE GITHUB</span>
       <h2 data-i18n="ossTitle">ONE HUB es OPEN SOURCE.<br><span>Descarga gratis CLEAN o DEMO.</span></h2>
-      <p data-i18n="ossIntro">Usa el código en tu propio servidor. Elige la instalación limpia o explora la edición con datos ficticios. Las contribuciones al desarrollo son voluntarias.</p>
+      <p data-i18n="ossIntro">Selecciona CLEAN o DEMO, registra tu nombre y correo y accede a la descarga oficial desde GitHub. El software es gratuito y los aportes son voluntarios.</p>
     </div>
+    <div class="oh-download-gate-intro"><svg class="oh-icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#oh-ico-shield"></use></svg><span data-i18n="downloadGateIntro">Nombre y correo antes de la descarga · ZIP oficiales en GitHub · Sin pagos ni publicidad obligatoria</span><a href="descargar.php" data-gated-download="clean" data-i18n="downloadGateStart">IR AL FORMULARIO</a></div>
     <div class="oh-oss-grid">
-      <article class="oh-oss-card reveal"><span class="oh-oss-step">01</span><div class="oh-kicker">COMMUNITY</div><h3>CLEAN</h3><span class="oh-oss-email-check" data-i18n="ossEmailIncluded">✓ CRM + EMAILSEND incluidos</span><p data-i18n="ossCleanDesc">Para comenzar desde cero: CRM, proyectos, documentos, finanzas y EMAILSEND, sin registros empresariales.</p><ul><li data-i18n="ossCleanA">Código PHP + MySQL</li><li data-i18n="ossCleanB">Instalador desde cero</li><li data-i18n="ossCleanC">Sin datos de clientes</li></ul><a class="oh-btn oh-btn-primary" href="downloads/ONE_HUB_COMMUNITY_CLEAN_OS.zip" download data-i18n="ossCleanBtn">DESCARGAR CLEAN</a></article>
-      <article class="oh-oss-card reveal"><span class="oh-oss-step">02</span><div class="oh-kicker">COMMUNITY</div><h3>DEMO</h3><span class="oh-oss-email-check" data-i18n="ossEmailIncluded">✓ CRM + EMAILSEND incluidos</span><p data-i18n="ossDemoDesc">Para conocer el ecosistema: clientes, negocios, proyectos, cotizaciones, métricas y campañas ficticias.</p><ul><li data-i18n="ossDemoA">Datos ficticios de muestra</li><li data-i18n="ossDemoB">Activar durante el instalador</li><li data-i18n="ossDemoC">Sin envío real de campañas</li></ul><a class="oh-btn oh-btn-primary" href="downloads/ONE_HUB_COMMUNITY_DEMO_OS.zip" download data-i18n="ossDemoBtn">DESCARGAR DEMO</a></article>
+      <article class="oh-oss-card reveal"><span class="oh-oss-step">01</span><div class="oh-kicker">COMMUNITY</div><h3>CLEAN</h3><span class="oh-oss-email-check" data-i18n="ossEmailIncluded">✓ CRM + EMAILSEND incluidos</span><p data-i18n="ossCleanDesc">Para comenzar desde cero: CRM, proyectos, documentos, finanzas y EMAILSEND, sin registros empresariales.</p><ul><li data-i18n="ossCleanA">Código PHP + MySQL</li><li data-i18n="ossCleanB">Instalador desde cero</li><li data-i18n="ossCleanC">Sin datos de clientes</li></ul><a class="oh-btn oh-btn-primary" href="descargar.php?edition=clean" data-gated-download="clean" data-i18n="ossCleanBtn">DESCARGAR CLEAN</a></article>
+      <article class="oh-oss-card reveal"><span class="oh-oss-step">02</span><div class="oh-kicker">COMMUNITY</div><h3>DEMO</h3><span class="oh-oss-email-check" data-i18n="ossEmailIncluded">✓ CRM + EMAILSEND incluidos</span><p data-i18n="ossDemoDesc">Para conocer el ecosistema: clientes, negocios, proyectos, cotizaciones, métricas y campañas ficticias.</p><ul><li data-i18n="ossDemoA">Datos ficticios de muestra</li><li data-i18n="ossDemoB">Activar durante el instalador</li><li data-i18n="ossDemoC">Sin envío real de campañas</li></ul><a class="oh-btn oh-btn-primary" href="descargar.php?edition=demo" data-gated-download="demo" data-i18n="ossDemoBtn">DESCARGAR DEMO</a></article>
       <article class="oh-oss-card oh-oss-card-support reveal" id="apoyar"><span class="oh-oss-step">03</span><div class="oh-kicker" data-i18n="ossSupportTag">COLABORA</div><h3 data-i18n="ossSupportTitle">Apoya el desarrollo</h3><p data-i18n="ossSupportDesc">ONE HUB es gratuito. La comunidad puede contribuir voluntariamente con mejoras, traducciones, documentación o patrocinios.</p><ul><li data-i18n="ossSupportA">Sin funciones bloqueadas</li><li data-i18n="ossSupportB">Soporte profesional opcional</li><li data-i18n="ossSupportC">Plataformas de aporte disponibles</li></ul><a class="oh-btn oh-btn-light" href="#contribuir" data-i18n="fundingSeeOptions">VER FORMAS DE APOYAR</a></article>
     </div>
     <p class="oh-oss-beta" data-i18n="ossRCNote">ONE HUB Community v1.0.0 es gratuito y de código abierto. Los aportes son siempre voluntarios.</p>
@@ -595,8 +596,8 @@
 
             <div class="oh-contact-form oh-community-contact" aria-label="Recursos de la comunidad">
   <div class="oh-community-contact-head"><span class="oh-kicker" data-i18n="ossContactBoxKicker">ACCESO GRATUITO</span><h3 data-i18n="ossContactBoxTitle">Elige cómo empezar con ONE HUB</h3><p data-i18n="ossContactBoxText">Descarga la versión sin datos o prueba la versión con contenido ficticio. Ambas utilizan el mismo código abierto.</p></div>
-  <a class="oh-btn oh-btn-primary oh-btn-lg oh-oss-full" href="downloads/ONE_HUB_COMMUNITY_CLEAN_OS.zip" download data-i18n="ossCleanBtn">DESCARGAR CLEAN</a>
-  <a class="oh-btn oh-btn-light oh-btn-lg oh-oss-full" href="downloads/ONE_HUB_COMMUNITY_DEMO_OS.zip" download data-i18n="ossDemoBtn">DESCARGAR DEMO</a>
+  <a class="oh-btn oh-btn-primary oh-btn-lg oh-oss-full" href="descargar.php?edition=clean" data-gated-download="clean" data-i18n="ossCleanBtn">DESCARGAR CLEAN</a>
+  <a class="oh-btn oh-btn-light oh-btn-lg oh-oss-full" href="descargar.php?edition=demo" data-gated-download="demo" data-i18n="ossDemoBtn">DESCARGAR DEMO</a>
   <a class="oh-btn oh-btn-light oh-btn-lg oh-oss-full" href="manual.php" data-i18n="ossManualBtn">LEER MANUAL DE INSTALACIÓN</a>
   <p class="oh-oss-muted" data-i18n="ossHelpText">El software es gratuito. Si deseas una instalación administrada o desarrollo personalizado, puedes contactar al desarrollador.</p>
   <a href="mailto:info@socrates.la?subject=ONE%20HUB%20Community" class="oh-contact-email">info@socrates.la</a>
@@ -665,6 +666,6 @@
 </div>
 
 <div class="oh-cookie" id="oh-cookie" hidden><div><strong data-i18n="cookieTitle">Tu privacidad importa</strong><span data-i18n="cookieText">Usamos únicamente cookies técnicas y de preferencia necesarias para el funcionamiento del sitio.</span></div><div class="oh-cookie-actions"><a href="cookies.php" data-i18n="cookieMore">Ver política</a><button type="button" id="cookie-accept" class="oh-btn oh-btn-primary" data-i18n="cookieAccept">Aceptar</button></div></div>
-<script src="assets/js/landing.js?v=1.6.1-funding" defer></script>
+<script src="assets/js/landing.js?v=1.6.2-github-gate" defer></script>
 </body>
 </html>
