@@ -1,0 +1,43 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+**/config.php
+**/config.local.php
+**/config.production.php
+**/.htpasswd
+**/secrets.*
+**/*private*.key
+**/*.pem
+**/*.p12
+**/*.pfx
+
+# Database backups and real customer exports
+*.sql.gz
+*.sql.zip
+*.dump
+*.bak
+*backup*.sql
+*producao*.sql
+*production*.sql
+admwebla_*.sql
+
+# Runtime data (keep placeholder .gitkeep files)
+**/storage/*
+!**/storage/.gitkeep
+!**/storage/.htaccess
+**/uploads/*
+!**/uploads/.gitkeep
+!**/uploads/.htaccess
+**/sessions/*
+**/cache/*
+**/logs/*
+*.log
+
+# Development/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/
+vendor/
