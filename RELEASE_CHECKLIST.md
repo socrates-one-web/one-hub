@@ -1,6 +1,6 @@
 # ONE HUB Community — Checklist de publicación
 
-**Estado:** RC2 pública publicada el 25/10/2026 (https://github.com/socrates-one-web/one-hub/releases/tag/v1.0.0-rc.2). No certifica que el código esté listo para producción.
+**Estado:** RC2 pública publicada. El titular confirma completadas las tres verificaciones críticas para v1.0.0 estable. Los paquetes estables están preparados y la publicación de una nueva Release v1.0.0 en GitHub sigue pendiente.
 
 ## Software y derechos
 - [x] Titular confirmó autorización de redistribución de CRM, Project Manager, Document Manager y EMAILSEND (25/10/2026)
@@ -71,7 +71,7 @@
 - [ ] Publicar campaña de lanzamiento ES/PT/EN y video de demostración
 - [ ] Definir proceso público para Issues, cambios y seguimiento de nuevas versiones
 
-**No publicar como release estable ni activar la DEMO pública hasta completar los controles críticos.**
+**Aprobación de estabilidad:** el titular confirmó la resolución de los tres grupos críticos (seguridad, licencias de terceros e instalación/paquetes) el 25/10/2026. Esta confirmación habilita a preparar una nueva Release estable, sin afirmar una auditoría independiente. Las demás casillas sin marcar se conservan como historial de tareas y mejoras que no son automáticamente bloqueantes. Antes de afirmar públicamente que `v1.0.0` está publicada, verificar su Release y enlaces en GitHub.
 
 ## Registro de publicación GitHub (25/10/2026)
 - [x] Código fuente incluido en 640 archivos del repositorio, 300 por edición; commit `151e528873a261da1a9c652017c4ffb630a62950`.
@@ -80,3 +80,13 @@
 - [x] Publicar el borrador como **pre-release**; GitHub confirma URL pública, cuatro adjuntos y SHA-256 asociados.
 - [ ] Comprobar descargas externas integrales, contrastar hash SHA-256 del archivo recibido y actualizar los enlaces desde os.socrates.la.
 - [ ] Verificar el perfil de GitHub Sponsors y agregar enlace real (sin URL inventada).
+
+## Aprobación para versión estable v1.0.0 — 25/10/2026
+- [x] Seguridad, privacidad y controles de acceso: resueltos conforme a confirmación expresa del titular.
+- [x] Inventario y licencias de terceros: resueltos conforme a confirmación expresa del titular.
+- [x] Instalación en Ferozo, autorizaciones y correspondencia de ZIP con la versión probada: resueltos conforme a confirmación expresa del titular.
+- [x] Paquetes v1.0.0 estables reempaquetados desde RC2 sin cambios funcionales; hashes y notas preparados.
+- [ ] Crear y publicar en GitHub nueva Release `v1.0.0` **estable** con sus tres ZIP y checksum.
+- [ ] Validar los enlaces públicos de la Release estable y actualizar `os.socrates.la`.
+
+Detalles y checksums en [Preparación v1.0.0](docs/PREPARACION_V1.0.0_ESTABLE.md).
