@@ -62,6 +62,7 @@ Los SHA-256 de esta tabla provienen de los adjuntos oficiales de GitHub. Verific
 - Security reporting: [SECURITY.md](SECURITY.md)
 - Contributions: [CONTRIBUTING.md](CONTRIBUTING.md)
 - Release checklist: [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md)
-- Donations are **voluntary**. An official sponsorship URL will be published only after the payment account is verified.
+- **GitHub Sponsors está activo / is live:** [Apoyar ONE HUB / Sponsor ONE HUB](https://github.com/sponsors/socrates-one-web). Aportes voluntarios; el software y todas sus funciones continúan gratuitos.
+- Otros medios de aporte (Stripe, Ko-fi o PIX) se incorporarán únicamente cuando sus enlaces oficiales estén configurados y comprobados.
 
 **Maintainer:** Sócrates Creative Studio / Socrates One Web Design LTDA · https://os.socrates.la/
