@@ -44,6 +44,11 @@
 - [ ] Rechazo de nuevas cargas SVG con RC1.1 y aceptación de PNG/JPG/WEBP comprobados en el servidor.
 - [ ] Comprobar que no quedan archivos SVG previamente subidos ni archivos personales accesibles directamente.
 
+## Candidato RC1.1 (distribución privada)
+- [x] Generados y verificados candidatos privados RC1.1 COMPLETO, CLEAN y DEMO, con parche de logos incorporado
+- [x] Sintaxis 407 PHP y 25 JS propios; integridad ZIP e inspección preliminar de patrones de credenciales
+- [ ] Auditoría dinámica e instalación de los ZIP RC1.1 exactos antes de publicación pública
+
 ## Entregables
 - [ ] Código fuente auditable y directorios documentados
 - [ ] CLEAN: paquete de instalación sin registros comerciales
