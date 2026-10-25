@@ -1,0 +1,11 @@
+ONE HUB CLEAN · Instalación en https://os.socrates.la/crm/
+
+1. Configure PHP 8.1+ para os.socrates.la.
+2. Cree MySQL NUEVA y VACÍA, exclusiva para esta edición. No importe backups de producción.
+3. Abra /crm/diagnostico.php y compruebe requisitos.
+4. Abra /crm/install.php, configure MySQL y administrador.
+5. Use base MySQL DISTINTA a la de la otra edición.
+6. Elimine diagnostico.php después de verificar.
+7. EMAILSEND requiere su propia base y configuración, véase /manual.php.
+
+No suba SQL ni credenciales de la instalación anterior.

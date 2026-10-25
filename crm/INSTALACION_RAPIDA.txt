@@ -1,0 +1,24 @@
+SÓCRATES ONE CRM 1.6.1 — INSTALACIÓN RÁPIDA
+================================================
+
+INSTALACIÓN NUEVA
+1. Crea una base de datos MySQL vacía.
+2. Sube todos los archivos a la raíz de crm.socrates.la.
+3. Abre https://crm.socrates.la/install.php.
+4. Completa los datos de MySQL y crea la contraseña del administrador.
+5. Configura SMTP y envía un correo de prueba.
+6. Configura formas de pago, datos empresariales y alertas.
+7. Configura el CRON indicado en Configuración.
+8. Elimina o bloquea install.php después de comprobar el acceso.
+
+ACTUALIZACIÓN DESDE 1.5.0
+1. Usa socrates-one-crm-actualizacion-v1.6.1.zip.
+2. Respalda la base de datos, includes/config.php y uploads/.
+3. Sube el contenido del ZIP sobre la instalación actual.
+4. Acepta reemplazar los archivos.
+5. No ejecutes install.php.
+6. No es necesario ejecutar repair.php porque esta actualización no cambia tablas.
+7. Recarga el navegador con Ctrl + F5.
+
+La actualización conserva clientes, servicios, cotizaciones, contratos, usuarios,
+formas de pago, archivos, configuraciones y toda la información existente.

@@ -1,0 +1,76 @@
+SÓCRATES CRM v2.1.0 — DOCUMENT MANAGER 360°
+================================================
+
+ESTA ACTUALIZACIÓN PARTE DE LA BASE FUNCIONAL PROYECTOS.zip v2.0.1
+Y AGREGA EL GESTOR DOCUMENTAL COMPLETO SIN BORRAR LOS DATOS EXISTENTES.
+
+ANTES DE ACTUALIZAR
+-------------------
+1. Exporta la base de datos completa desde phpMyAdmin.
+2. Descarga una copia de `includes/config.php`.
+3. Descarga una copia de la carpeta `uploads/`.
+4. Si ya existe `storage/documents/`, respáldala también.
+
+INSTALACIÓN
+-----------
+1. Extrae `socrates-crm-actualizacion-v2.1.0-document-manager.zip`.
+2. Entra en la carpeta `PROYECTOS` incluida en el ZIP.
+3. Sube TODO su contenido a la raíz de `proyectos.socrates.la`.
+4. Acepta reemplazar los archivos existentes.
+5. NO ejecutes `install.php`.
+6. Abre:
+   https://proyectos.socrates.la/repair.php
+7. Presiona `REPARAR Y ACTUALIZAR AHORA`.
+8. Cuando termine, vuelve al CRM y recarga con Ctrl + F5.
+9. Comprueba que aparece la nueva sección DOCUMENTOS en el menú.
+10. Cuando confirmes que todo funciona, elimina o bloquea `repair.php`.
+
+CONFIGURACIÓN RECOMENDADA
+-------------------------
+1. Entra en Configuración > Gestión documental.
+2. Revisa:
+   - Tamaño máximo por archivo.
+   - Días de alerta por vencimiento.
+   - Visibilidad predeterminada.
+3. En Usuarios asigna departamento y permisos documentales según corresponda.
+4. En Documentos > Carpetas crea la estructura de la empresa.
+5. En Documentos > Rutas de aprobación configura los circuitos de revisión.
+
+ALERTAS DOCUMENTALES (CRON)
+---------------------------
+Ejecuta una vez al día por CLI, por ejemplo a las 08:00:
+
+0 8 * * * /usr/bin/php /RUTA/DEL/CRM/cron/document_alerts.php >/dev/null 2>&1
+
+El CRON crea notificaciones internas para documentos próximos a vencer según
+los días configurados en Configuración > Gestión documental.
+
+PRUEBAS RECOMENDADAS DESPUÉS DE ACTUALIZAR
+------------------------------------------
+1. Crear carpeta y subcarpeta.
+2. Subir un PDF y una imagen mediante arrastrar y soltar.
+3. Abrir el documento y comprobar preview/descarga.
+4. Cargar una segunda versión y restaurar la primera.
+5. Relacionar el documento con un cliente y un proyecto.
+6. Crear permiso para otro usuario/rol/departamento.
+7. Crear un enlace externo con contraseña y vencimiento.
+8. Crear una ruta de aprobación y aprobar/rechazar con otro usuario.
+9. Enviar a papelera y restaurar.
+10. Revisar Auditoría documental.
+11. Buscar el documento desde el buscador global.
+12. Abrir Manual y Tour para confirmar los nuevos capítulos.
+
+VALIDACIÓN REALIZADA ANTES DE EMPAQUETAR
+---------------------------------------
+- 196 archivos PHP: 0 errores de sintaxis.
+- 9 archivos JavaScript: 0 errores de sintaxis (`node --check`).
+- 58 tablas detectadas en schema.sql.
+- 12 tablas del Document Manager presentes.
+- Referencias de claves foráneas comprobadas estáticamente.
+- Referencias de iconos del CRM comprobadas: 0 iconos faltantes.
+- Referencias documentales a permisos y módulos comprobadas estáticamente.
+
+IMPORTANTE: esta validación es de código, esquema y paquete. No ejecuta la
+migración contra tu base de datos de producción ni modifica el servidor real.
+
+Versión: 2.1.0

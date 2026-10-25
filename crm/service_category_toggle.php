@@ -1,0 +1,2 @@
+<?php
+declare(strict_types=1);require __DIR__.'/includes/bootstrap.php';require __DIR__.'/includes/auth.php';require_permission('catalog_categories.manage');if($_SERVER['REQUEST_METHOD']!=='POST')redirect('service_categories.php');verify_csrf();$id=(int)($_POST['id']??0);$stmt=db()->prepare('UPDATE service_categories SET is_active=IF(is_active=1,0,1) WHERE id=?');$stmt->execute([$id]);flash('success','Estado de la categoría actualizado.');redirect('service_categories.php');

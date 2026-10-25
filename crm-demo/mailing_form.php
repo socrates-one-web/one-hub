@@ -1,0 +1,32 @@
+<?php
+declare(strict_types=1);
+require __DIR__.'/includes/bootstrap.php';
+require __DIR__.'/includes/auth.php';
+require_permission('mailing.manage');
+$id=max(0,(int)($_GET['id']??$_POST['id']??0));
+$campaign=null;$selected=[];
+if($id){$st=db()->prepare('SELECT * FROM mailing_campaigns WHERE id=?');$st->execute([$id]);$campaign=$st->fetch();if(!$campaign){http_response_code(404);exit('Campaña no encontrada.');}$st=db()->prepare("SELECT CONCAT(IF(contact_id IS NULL,'c:','p:'),COALESCE(contact_id,client_id)) ref FROM mailing_recipients WHERE campaign_id=?");$st->execute([$id]);$selected=array_column($st->fetchAll(),'ref');}
+$pageTitle=$campaign?'Editar campaña':'Nueva campaña de mailing';$errors=[];
+$clients=db()->query("SELECT id,company_name,email,country,preferred_language,status FROM clients WHERE email IS NOT NULL AND email<>'' ORDER BY country,company_name")->fetchAll();
+$contacts=db()->query("SELECT p.id,CONCAT(p.first_name,' ',COALESCE(p.last_name,'')) person_name,p.email,p.language,p.status,c.company_name,c.country FROM contacts p LEFT JOIN clients c ON c.id=p.client_id WHERE p.email IS NOT NULL AND p.email<>'' ORDER BY person_name")->fetchAll();
+if($_SERVER['REQUEST_METHOD']==='POST'){
+ verify_csrf();$name=trim((string)($_POST['name']??''));$subject=trim((string)($_POST['subject']??''));$language=(string)($_POST['language']??'es');$content=trim((string)($_POST['html_content']??''));$refs=array_values(array_unique(array_filter(array_map('strval',$_POST['recipients']??[]))));
+ if($name==='')$errors[]='El nombre interno es obligatorio.';if($subject==='')$errors[]='El asunto es obligatorio.';if($content==='')$errors[]='Escribe el contenido del mensaje.';if(!$refs)$errors[]='Selecciona al menos un destinatario.';if(!in_array($language,['es','pt','en'],true))$language='es';
+ if(!$errors){$pdo=db();$pdo->beginTransaction();try{if($id){$pdo->prepare("UPDATE mailing_campaigns SET name=?,subject=?,language=?,html_content=?,status='draft' WHERE id=?")->execute([$name,$subject,$language,$content,$id]);$pdo->prepare('DELETE FROM mailing_recipients WHERE campaign_id=?')->execute([$id]);}else{$pdo->prepare("INSERT INTO mailing_campaigns(name,subject,language,html_content,status,audience_type,created_by) VALUES (?,?,?,?,'draft','both',?)")->execute([$name,$subject,$language,$content,(int)$_SESSION['user_id']]);$id=(int)$pdo->lastInsertId();}
+ $ins=$pdo->prepare('INSERT IGNORE INTO mailing_recipients(campaign_id,client_id,contact_id,email,recipient_name) VALUES (?,?,?,?,?)');
+ foreach($refs as$ref){[$kind,$rid]=array_pad(explode(':',$ref,2),2,'0');$rid=(int)$rid;if($kind==='c'){$s=$pdo->prepare('SELECT id,company_name,email FROM clients WHERE id=?');$s->execute([$rid]);$r=$s->fetch();if($r&&filter_var($r['email'],FILTER_VALIDATE_EMAIL))$ins->execute([$id,$rid,null,strtolower($r['email']),$r['company_name']]);}elseif($kind==='p'){$s=$pdo->prepare("SELECT p.id,p.client_id,CONCAT(p.first_name,' ',COALESCE(p.last_name,'')) recipient_name,p.email FROM contacts p WHERE p.id=?");$s->execute([$rid]);$r=$s->fetch();if($r&&filter_var($r['email'],FILTER_VALIDATE_EMAIL))$ins->execute([$id,$r['client_id']?:null,$rid,strtolower($r['email']),trim($r['recipient_name'])]);}}
+ $pdo->commit();flash('success','Campaña guardada con sus destinatarios.');redirect('mailing_view.php?id='.$id);}catch(Throwable$e){$pdo->rollBack();$errors[]=$e->getMessage();}}
+ $selected=$refs;
+}
+$v=fn($k,$d='')=>$_POST[$k]??($campaign[$k]??$d);
+require __DIR__.'/includes/header.php';
+?>
+<?php foreach($errors as$er):?><div class="alert alert-error"><?=e($er)?></div><?php endforeach;?>
+<form method="post" class="panel"><div class="panel-header"><div><h2>Contenido y audiencia</h2><span class="table-sub">Puedes usar {{NOMBRE}} y {{EMPRESA}} para personalizar el correo.</span></div><a class="btn btn-light" href="mailing.php">Cancelar</a></div><div class="panel-body form-grid three"><?=csrf_field()?><input type="hidden" name="id" value="<?=$id?>">
+<label>Nombre interno *<input name="name" required value="<?=e($v('name'))?>"></label><label class="span-2">Asunto *<input name="subject" required value="<?=e($v('subject'))?>"></label><label>Idioma<select name="language"><?php foreach(['es'=>'Español','pt'=>'Português','en'=>'English']as$k=>$label):?><option value="<?=$k?>" <?=$v('language','es')===$k?'selected':''?>><?=$label?></option><?php endforeach;?></select></label>
+<label class="full">Contenido del email *<textarea name="html_content" rows="12" required placeholder="Escribe el mensaje. Se respetarán los saltos de línea."><?=e($v('html_content'))?></textarea><span class="table-sub">El CRM lo colocará dentro de una plantilla corporativa adaptable a móviles.</span></label>
+<div class="full audience-picker"><div class="panel-header compact"><div><h3>Clientes</h3><span class="table-sub">Email principal de la empresa</span></div><label class="checkbox-row"><input type="checkbox" data-check-all="clients"> Seleccionar todos</label></div><div class="recipient-grid" data-recipient-group="clients"><?php foreach($clients as$c):$ref='c:'.$c['id'];?><label class="recipient-option"><input type="checkbox" name="recipients[]" value="<?=$ref?>" <?=in_array($ref,$selected,true)?'checked':''?>><span><strong><?=e($c['company_name'])?></strong><small><?=e($c['email'].' · '.($c['country']?:'Sin país'))?></small></span></label><?php endforeach;?></div></div>
+<div class="full audience-picker"><div class="panel-header compact"><div><h3>Contactos</h3><span class="table-sub">Personas registradas en la base de contactos</span></div><label class="checkbox-row"><input type="checkbox" data-check-all="contacts"> Seleccionar todos</label></div><div class="recipient-grid" data-recipient-group="contacts"><?php foreach($contacts as$c):$ref='p:'.$c['id'];?><label class="recipient-option"><input type="checkbox" name="recipients[]" value="<?=$ref?>" <?=in_array($ref,$selected,true)?'checked':''?>><span><strong><?=e(trim($c['person_name']))?></strong><small><?=e($c['email'].' · '.($c['company_name']?:'Sin empresa'))?></small></span></label><?php endforeach;?></div></div>
+<div class="full form-actions"><button class="btn btn-primary">GUARDAR CAMPAÑA</button></div></div></form>
+<script>document.querySelectorAll('[data-check-all]').forEach(x=>x.addEventListener('change',()=>{document.querySelectorAll('[data-recipient-group="'+x.dataset.checkAll+'"] input').forEach(i=>i.checked=x.checked)}));</script>
+<?php require __DIR__.'/includes/footer.php';?>

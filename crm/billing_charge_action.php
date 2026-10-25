@@ -1,0 +1,5 @@
+<?php
+declare(strict_types=1);require __DIR__.'/includes/bootstrap.php';require __DIR__.'/includes/auth.php';require_permission('billing.charges.manage');
+if($_SERVER['REQUEST_METHOD']!=='POST')redirect('billing_charges.php');verify_csrf();$id=max(0,(int)($_POST['id']??0));$action=(string)($_POST['action']??'');$st=db()->prepare('SELECT * FROM billing_charges WHERE id=?');$st->execute([$id]);$charge=$st->fetch();if(!$charge){flash('error','Cobro no encontrado.');redirect('billing_charges.php');}
+if($action==='cancel'&&$charge['status']!=='paid'){db()->prepare("UPDATE billing_charges SET status='cancelled' WHERE id=?")->execute([$id]);flash('success','Cobro cancelado.');log_activity('Cobro cancelado',(int)$charge['client_id'],(int)$charge['service_id'],'Cobro #'.$id);}elseif($action==='reopen'&&$charge['status']==='cancelled'){db()->prepare("UPDATE billing_charges SET status=IF(due_date<CURDATE(),'overdue','pending') WHERE id=?")->execute([$id]);flash('success','Cobro reabierto.');}
+redirect('billing_charges.php');

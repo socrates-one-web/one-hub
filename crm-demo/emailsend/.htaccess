@@ -1,0 +1,14 @@
+# ONE HUB EMAILSEND - aislado dentro del CRM
+DirectoryIndex index.php
+<FilesMatch "^(\.|config\.php$|.*\.(?:sql|log|ini|md|txt|json)$)">
+  Require all denied
+</FilesMatch>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^(?:includes|storage|install|cron)/ - [F,L,NC]
+</IfModule>
+<IfModule mod_headers.c>
+ Header always set X-Content-Type-Options "nosniff"
+ Header always set X-Frame-Options "SAMEORIGIN"
+ Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

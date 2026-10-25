@@ -1,0 +1,49 @@
+SÓCRATES CRM v2.2.1 — AUDITORÍA DOCUMENT PREVIEW
+
+OBJETIVO
+Corregir el visor roto de Document Manager sin exponer storage/documents y sin alterar la base de datos.
+
+ARCHIVOS PHP DEL HOTFIX
+- document_preview.php: nuevo motor seguro de vista previa.
+- document_view.php: usa el nuevo motor según tipo de archivo.
+- document_download.php: mantiene descarga y limita inline nativo a PDF/imagen.
+- includes/document_manager.php: clasificación de tipos y modos de vista previa.
+
+FORMATOS
+- PDF: visor nativo del navegador.
+- JPG/JPEG/PNG/WEBP/GIF/BMP/SVG: imagen embebida.
+- TXT/MD/LOG/INI/CONF/CSS/JS/PHP/SQL/JSON/XML/YML/YAML: visor de texto seguro.
+- CSV: tabla (hasta 300 líneas de vista previa).
+- DOCX: extracción local del contenido textual.
+- XLSX: primera hoja, hasta 250 filas y 50 columnas.
+- PPTX: extracción local de texto por diapositiva.
+- ZIP/JAR: listado de archivos internos.
+- DOC/XLS/PPT antiguos y otros binarios: estado informativo + descarga, sin visor roto.
+
+COMPATIBILIDAD OOXML
+El visor intenta primero PHP ZipArchive. Si la extensión no está disponible, usa PharData como alternativa local. Se probó el fallback PharData con DOCX, XLSX y PPTX de prueba.
+
+SEGURIDAD
+- Exige sesión autenticada.
+- Exige permiso documents.view.
+- Revalida ACL del documento.
+- Revalida que la versión pertenezca al documento.
+- Usa dms_safe_path() para impedir traversal fuera del almacenamiento.
+- storage/documents permanece bloqueado al acceso web directo.
+- Texto y valores se escapan antes de mostrarse.
+- CSP frame-ancestors 'self' en vistas HTML.
+- X-Frame-Options SAMEORIGIN.
+- La vista previa queda registrada en document_audit.
+
+BASE DE DATOS
+Sin cambios de esquema. NO ejecutar repair.php.
+
+VALIDACIONES REALIZADAS
+- PHP lint: document_preview.php OK.
+- PHP lint: document_view.php OK.
+- PHP lint: document_download.php OK.
+- PHP lint: includes/document_manager.php OK.
+- Prueba de extracción DOCX con PharData: OK.
+- Prueba de lectura XLSX con PharData: OK.
+- Prueba de lectura PPTX con PharData: OK, incluyendo caracteres UTF-8.
+- Nuevo endpoint referenciado desde document_view.php: OK.

@@ -1,0 +1,16 @@
+DirectoryIndex index.php index.html
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^(?:config|legal_template)\.php$ - [F,L,NC]
+RewriteRule (^|/)(?:\.env|\.git)(/|$) - [F,L,NC]
+</IfModule>
+<FilesMatch "^(config|legal_template)\.php$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+</FilesMatch>
+<IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

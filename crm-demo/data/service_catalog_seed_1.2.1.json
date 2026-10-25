@@ -1,0 +1,1220 @@
+{
+  "version": "1.2.1-202-services",
+  "source": "servicios.xlsx",
+  "service_count": 202,
+  "category_count": 12,
+  "services": [
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Diseño gráfico",
+      "name_en": "Graphic Design",
+      "name_pt": "Design Gráfico"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Branding e identidad visual",
+      "name_en": "Branding & Visual Identity",
+      "name_pt": "Branding e Identidade Visual"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Estrategia de marca",
+      "name_en": "Brand Strategy",
+      "name_pt": "Estratégia de Marca"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Diseño de logotipos",
+      "name_en": "Logo Design",
+      "name_pt": "Criação de Logotipos"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Rediseño de marca",
+      "name_en": "Brand Redesign",
+      "name_pt": "Redesign de Marca"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Sistemas de identidad visual",
+      "name_en": "Visual Identity Systems",
+      "name_pt": "Sistemas de Identidade Visual"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Manual de marca",
+      "name_en": "Brand Guidelines",
+      "name_pt": "Manual de Marca"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Definición de colores corporativos",
+      "name_en": "Corporate Color System",
+      "name_pt": "Definição de Cores Corporativas"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Selección y jerarquía tipográfica",
+      "name_en": "Typography Selection & Hierarchy",
+      "name_pt": "Seleção e Hierarquia Tipográfica"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Diseño de iconografía",
+      "name_en": "Iconography Design",
+      "name_pt": "Design de Iconografia"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Papelería corporativa",
+      "name_en": "Corporate Stationery",
+      "name_pt": "Papelaria Corporativa"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Tarjetas de presentación",
+      "name_en": "Business Card Design",
+      "name_pt": "Cartões de Visita"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Carpetas corporativas",
+      "name_en": "Corporate Folder Design",
+      "name_pt": "Pastas Corporativas"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Presentaciones corporativas",
+      "name_en": "Corporate Presentations",
+      "name_pt": "Apresentações Corporativas"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Brochures y folletos",
+      "name_en": "Brochures & Flyers",
+      "name_pt": "Brochuras e Folhetos"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Catálogos de productos",
+      "name_en": "Product Catalogs",
+      "name_pt": "Catálogos de Produtos"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Diseño editorial",
+      "name_en": "Editorial Design",
+      "name_pt": "Design Editorial"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Diseño para impresión",
+      "name_en": "Print Design",
+      "name_pt": "Design para Impressão"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Diseño de banners publicitarios",
+      "name_en": "Advertising Banner Design",
+      "name_pt": "Design de Banners Publicitários"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Diseño de anuncios digitales",
+      "name_en": "Digital Advertisement Design",
+      "name_pt": "Design de Anúncios Digitais"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Kits gráficos para redes sociales",
+      "name_en": "Social Media Graphic Kits",
+      "name_pt": "Kits Gráficos para Redes Sociais"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Gráficos en movimiento",
+      "name_en": "Motion Graphics",
+      "name_pt": "Motion Graphics"
+    },
+    {
+      "category": "Diseño gráfico, branding e identidad",
+      "name_es": "Experiencias visuales de marca",
+      "name_en": "Visual Brand Experiences",
+      "name_pt": "Experiências Visuais de Marca"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Diseño web",
+      "name_en": "Web Design",
+      "name_pt": "Web Design"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Desarrollo web",
+      "name_en": "Web Development",
+      "name_pt": "Desenvolvimento Web"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Sitios web corporativos",
+      "name_en": "Corporate Websites",
+      "name_pt": "Sites Corporativos"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Sitios web institucionales",
+      "name_en": "Institutional Websites",
+      "name_pt": "Sites Institucionais"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Desarrollo WordPress personalizado",
+      "name_en": "Custom WordPress Development",
+      "name_pt": "Desenvolvimento WordPress Personalizado"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Diseño de temas WordPress personalizados",
+      "name_en": "Custom WordPress Theme Design",
+      "name_pt": "Criação de Temas WordPress Personalizados"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Landing pages",
+      "name_en": "Landing Pages",
+      "name_pt": "Landing Pages"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Micrositios para campañas",
+      "name_en": "Campaign Microsites",
+      "name_pt": "Microsites para Campanhas"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Blogs corporativos",
+      "name_en": "Corporate Blogs",
+      "name_pt": "Blogs Corporativos"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Sistemas de gestión de contenidos",
+      "name_en": "Content Management Systems",
+      "name_pt": "Sistemas de Gestão de Conteúdo"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Aplicaciones web personalizadas",
+      "name_en": "Custom Web Applications",
+      "name_pt": "Aplicações Web Personalizadas"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Portales empresariales",
+      "name_en": "Business Portals",
+      "name_pt": "Portais Empresariais"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Paneles de administración",
+      "name_en": "Administration Dashboards",
+      "name_pt": "Painéis Administrativos"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Diseño UX/UI",
+      "name_en": "UX/UI Design",
+      "name_pt": "Design UX/UI"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Diseño web responsive",
+      "name_en": "Responsive Web Design",
+      "name_pt": "Web Design Responsivo"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Diseño Mobile First",
+      "name_en": "Mobile-First Design",
+      "name_pt": "Design Mobile First"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Integración de API",
+      "name_en": "API Integration",
+      "name_pt": "Integração de APIs"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Integraciones con sistemas externos",
+      "name_en": "Third-Party System Integrations",
+      "name_pt": "Integrações com Sistemas Externos"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Soluciones web en la nube",
+      "name_en": "Cloud-Based Web Solutions",
+      "name_pt": "Soluções Web em Nuvem"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Arquitectura técnica SEO",
+      "name_en": "Technical SEO Architecture",
+      "name_pt": "Arquitetura Técnica de SEO"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Optimización de velocidad",
+      "name_en": "Website Speed Optimization",
+      "name_pt": "Otimização de Velocidade"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Optimización de conversiones",
+      "name_en": "Conversion Rate Optimization",
+      "name_pt": "Otimização de Conversões"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Pruebas A/B",
+      "name_en": "A/B Testing",
+      "name_pt": "Testes A/B"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Seguridad y protección web",
+      "name_en": "Website Security & Hardening",
+      "name_pt": "Segurança e Proteção Web"
+    },
+    {
+      "category": "Diseño y desarrollo web",
+      "name_es": "Rediseño y modernización de sitios web",
+      "name_en": "Website Redesign & Modernization",
+      "name_pt": "Redesign e Modernização de Sites"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Comercio electrónico",
+      "name_en": "E-commerce",
+      "name_pt": "Comércio Eletrônico"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Diseño de tiendas online",
+      "name_en": "Online Store Design",
+      "name_pt": "Criação de Lojas Virtuais"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Desarrollo WooCommerce",
+      "name_en": "WooCommerce Development",
+      "name_pt": "Desenvolvimento WooCommerce"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Tiendas online personalizadas",
+      "name_en": "Custom E-commerce Websites",
+      "name_pt": "Lojas Virtuais Personalizadas"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Catálogos digitales de productos",
+      "name_en": "Digital Product Catalogs",
+      "name_pt": "Catálogos Digitais de Produtos"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Integración de pasarelas de pago",
+      "name_en": "Payment Gateway Integration",
+      "name_pt": "Integração de Meios de Pagamento"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Integración con Stripe",
+      "name_en": "Stripe Integration",
+      "name_pt": "Integração com Stripe"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Integración con PayPal",
+      "name_en": "PayPal Integration",
+      "name_pt": "Integração com PayPal"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Integración de pagos locales",
+      "name_en": "Local Payment Integration",
+      "name_pt": "Integração de Pagamentos Locais"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Pagos en múltiples monedas",
+      "name_en": "Multi-Currency Payments",
+      "name_pt": "Pagamentos em Múltiplas Moedas"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Facturación automática",
+      "name_en": "Automated Invoicing",
+      "name_pt": "Faturamento Automático"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Diseño UX para e-commerce",
+      "name_en": "E-commerce UX Design",
+      "name_pt": "Design UX para E-commerce"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Optimización para compras móviles",
+      "name_en": "Mobile Commerce Optimization",
+      "name_pt": "Otimização para Compras Mobile"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Optimización del proceso de pago",
+      "name_en": "Checkout Optimization",
+      "name_pt": "Otimização do Checkout"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Pagos con un clic",
+      "name_en": "One-Click Payments",
+      "name_pt": "Pagamentos com Um Clique"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Optimización de imágenes de productos",
+      "name_en": "Product Image Optimization",
+      "name_pt": "Otimização de Imagens de Produtos"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Recuperación de carritos abandonados",
+      "name_en": "Abandoned Cart Recovery",
+      "name_pt": "Recuperação de Carrinhos Abandonados"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Recomendaciones inteligentes de productos",
+      "name_en": "AI Product Recommendations",
+      "name_pt": "Recomendações Inteligentes de Produtos"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Optimización inteligente de precios",
+      "name_en": "AI-Powered Pricing Optimization",
+      "name_pt": "Otimização Inteligente de Preços"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Paneles de análisis de ventas",
+      "name_en": "Revenue Analytics Dashboards",
+      "name_pt": "Painéis de Análise de Vendas"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Seguimiento de AOV y LTV",
+      "name_en": "AOV & LTV Tracking",
+      "name_pt": "Monitoramento de AOV e LTV"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Automatización de devoluciones",
+      "name_en": "Returns Automation",
+      "name_pt": "Automação de Devoluções"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Sistemas RMA",
+      "name_en": "RMA Systems",
+      "name_pt": "Sistemas RMA"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Integración de inventario",
+      "name_en": "Inventory Integration",
+      "name_pt": "Integração de Estoque"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Integración con transportistas",
+      "name_en": "Shipping Carrier Integration",
+      "name_pt": "Integração com Transportadoras"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Automatización de pedidos",
+      "name_en": "Order Automation",
+      "name_pt": "Automação de Pedidos"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Migración de tiendas online",
+      "name_en": "E-commerce Migration",
+      "name_pt": "Migração de Lojas Virtuais"
+    },
+    {
+      "category": "Comercio electrónico",
+      "name_es": "Soporte posterior al lanzamiento",
+      "name_en": "Post-Launch Support",
+      "name_pt": "Suporte Pós-Lançamento"
+    },
+    {
+      "category": "Diseño, modelado y animación 3D",
+      "name_es": "Diseño 3D",
+      "name_en": "3D Design",
+      "name_pt": "Design 3D"
+    },
+    {
+      "category": "Diseño, modelado y animación 3D",
+      "name_es": "Modelado 3D",
+      "name_en": "3D Modeling",
+      "name_pt": "Modelagem 3D"
+    },
+    {
+      "category": "Diseño, modelado y animación 3D",
+      "name_es": "Modelado de productos",
+      "name_en": "Product Modeling",
+      "name_pt": "Modelagem de Produtos"
+    },
+    {
+      "category": "Diseño, modelado y animación 3D",
+      "name_es": "Modelado de objetos",
+      "name_en": "Object Modeling",
+      "name_pt": "Modelagem de Objetos"
+    },
+    {
+      "category": "Diseño, modelado y animación 3D",
+      "name_es": "Visualización de productos",
+      "name_en": "Product Visualization",
+      "name_pt": "Visualização de Produtos"
+    },
+    {
+      "category": "Diseño, modelado y animación 3D",
+      "name_es": "Renderizado hiperrealista",
+      "name_en": "Hyper-Realistic Rendering",
+      "name_pt": "Renderização Hiper-Realista"
+    },
+    {
+      "category": "Diseño, modelado y animación 3D",
+      "name_es": "Renderizado arquitectónico",
+      "name_en": "Architectural Rendering",
+      "name_pt": "Renderização Arquitetônica"
+    },
+    {
+      "category": "Diseño, modelado y animación 3D",
+      "name_es": "Iluminación 3D cinematográfica",
+      "name_en": "Cinematic 3D Lighting",
+      "name_pt": "Iluminação 3D Cinematográfica"
+    },
+    {
+      "category": "Diseño, modelado y animación 3D",
+      "name_es": "Creación de materiales y texturas",
+      "name_en": "Materials & Texture Creation",
+      "name_pt": "Criação de Materiais e Texturas"
+    },
+    {
+      "category": "Diseño, modelado y animación 3D",
+      "name_es": "Animación 3D",
+      "name_en": "3D Animation",
+      "name_pt": "Animação 3D"
+    },
+    {
+      "category": "Diseño, modelado y animación 3D",
+      "name_es": "Animación de productos",
+      "name_en": "Product Animation",
+      "name_pt": "Animação de Produtos"
+    },
+    {
+      "category": "Diseño, modelado y animación 3D",
+      "name_es": "Composiciones 3D en movimiento",
+      "name_en": "3D Motion Compositions",
+      "name_pt": "Composições 3D em Movimento"
+    },
+    {
+      "category": "Diseño, modelado y animación 3D",
+      "name_es": "Escenarios y ambientes 3D",
+      "name_en": "3D Environments",
+      "name_pt": "Cenários e Ambientes 3D"
+    },
+    {
+      "category": "Diseño, modelado y animación 3D",
+      "name_es": "Experiencias visuales inmersivas",
+      "name_en": "Immersive Visual Experiences",
+      "name_pt": "Experiências Visuais Imersivas"
+    },
+    {
+      "category": "Diseño, modelado y animación 3D",
+      "name_es": "Elementos 3D interactivos",
+      "name_en": "Interactive 3D Elements",
+      "name_pt": "Elementos 3D Interativos"
+    },
+    {
+      "category": "Diseño, modelado y animación 3D",
+      "name_es": "Diseño y producción en Blender",
+      "name_en": "Blender Design & Production",
+      "name_pt": "Design e Produção em Blender"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Marketing digital",
+      "name_en": "Digital Marketing",
+      "name_pt": "Marketing Digital"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Estrategia de marketing digital",
+      "name_en": "Digital Marketing Strategy",
+      "name_pt": "Estratégia de Marketing Digital"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Posicionamiento web SEO",
+      "name_en": "Search Engine Optimization — SEO",
+      "name_pt": "Otimização para Mecanismos de Busca — SEO"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Marketing en buscadores SEM",
+      "name_en": "Search Engine Marketing — SEM",
+      "name_pt": "Marketing em Mecanismos de Busca — SEM"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "SEO técnico",
+      "name_en": "Technical SEO",
+      "name_pt": "SEO Técnico"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Investigación de palabras clave",
+      "name_en": "Keyword Research",
+      "name_pt": "Pesquisa de Palavras-Chave"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Marketing de contenidos",
+      "name_en": "Content Marketing",
+      "name_pt": "Marketing de Conteúdo"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Publicidad digital",
+      "name_en": "Digital Advertising",
+      "name_pt": "Publicidade Digital"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Gestión de tráfico pagado",
+      "name_en": "Paid Traffic Management",
+      "name_pt": "Gestão de Tráfego Pago"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Google Ads",
+      "name_en": "Google Ads",
+      "name_pt": "Google Ads"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Meta Ads",
+      "name_en": "Meta Ads",
+      "name_pt": "Meta Ads"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Campañas publicitarias multicanal",
+      "name_en": "Multichannel Advertising Campaigns",
+      "name_pt": "Campanhas Publicitárias Multicanal"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Segmentación avanzada de audiencias",
+      "name_en": "Advanced Audience Targeting",
+      "name_pt": "Segmentação Avançada de Públicos"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Análisis predictivo de audiencias",
+      "name_en": "Predictive Audience Analytics",
+      "name_pt": "Análise Preditiva de Públicos"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Optimización de anuncios con IA",
+      "name_en": "AI-Powered Ad Optimization",
+      "name_pt": "Otimização de Anúncios com IA"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Embudos de conversión",
+      "name_en": "Conversion Funnels",
+      "name_pt": "Funis de Conversão"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Automatización de embudos",
+      "name_en": "Funnel Automation",
+      "name_pt": "Automação de Funis"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Generación de leads",
+      "name_en": "Lead Generation",
+      "name_pt": "Geração de Leads"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Calificación inteligente de leads",
+      "name_en": "Intelligent Lead Qualification",
+      "name_pt": "Qualificação Inteligente de Leads"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Optimización de conversiones",
+      "name_en": "Conversion Optimization",
+      "name_pt": "Otimização de Conversões"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Seguimiento de campañas",
+      "name_en": "Campaign Tracking",
+      "name_pt": "Monitoramento de Campanhas"
+    },
+    {
+      "category": "Marketing digital",
+      "name_es": "Análisis e informes de rendimiento",
+      "name_en": "Performance Analytics & Reporting",
+      "name_pt": "Análise e Relatórios de Desempenho"
+    },
+    {
+      "category": "Redes sociales",
+      "name_es": "Gestión de redes sociales",
+      "name_en": "Social Media Management",
+      "name_pt": "Gestão de Redes Sociais"
+    },
+    {
+      "category": "Redes sociales",
+      "name_es": "Estrategia para redes sociales",
+      "name_en": "Social Media Strategy",
+      "name_pt": "Estratégia para Redes Sociais"
+    },
+    {
+      "category": "Redes sociales",
+      "name_es": "Planificación de contenidos",
+      "name_en": "Content Planning",
+      "name_pt": "Planejamento de Conteúdo"
+    },
+    {
+      "category": "Redes sociales",
+      "name_es": "Creación de contenido para redes sociales",
+      "name_en": "Social Media Content Creation",
+      "name_pt": "Criação de Conteúdo para Redes Sociais"
+    },
+    {
+      "category": "Redes sociales",
+      "name_es": "Diseño de publicaciones",
+      "name_en": "Social Media Post Design",
+      "name_pt": "Design de Publicações"
+    },
+    {
+      "category": "Redes sociales",
+      "name_es": "Kits para redes sociales",
+      "name_en": "Social Media Kits",
+      "name_pt": "Kits para Redes Sociais"
+    },
+    {
+      "category": "Redes sociales",
+      "name_es": "Gestión de comunidades",
+      "name_en": "Community Management",
+      "name_pt": "Gestão de Comunidades"
+    },
+    {
+      "category": "Redes sociales",
+      "name_es": "Gestión de comentarios y mensajes",
+      "name_en": "Comment & Message Management",
+      "name_pt": "Gestão de Comentários e Mensagens"
+    },
+    {
+      "category": "Redes sociales",
+      "name_es": "Campañas en Meta",
+      "name_en": "Meta Campaigns",
+      "name_pt": "Campanhas na Meta"
+    },
+    {
+      "category": "Redes sociales",
+      "name_es": "Anuncios para redes sociales",
+      "name_en": "Social Media Advertising",
+      "name_pt": "Anúncios para Redes Sociais"
+    },
+    {
+      "category": "Redes sociales",
+      "name_es": "Campañas multiplataforma",
+      "name_en": "Cross-Platform Campaigns",
+      "name_pt": "Campanhas Multiplataforma"
+    },
+    {
+      "category": "Redes sociales",
+      "name_es": "Crecimiento de interacción",
+      "name_en": "Engagement Growth",
+      "name_pt": "Crescimento de Engajamento"
+    },
+    {
+      "category": "Redes sociales",
+      "name_es": "Posicionamiento de marca en redes",
+      "name_en": "Social Brand Positioning",
+      "name_pt": "Posicionamento de Marca nas Redes"
+    },
+    {
+      "category": "Redes sociales",
+      "name_es": "Análisis de resultados",
+      "name_en": "Social Media Analytics",
+      "name_pt": "Análise de Resultados"
+    },
+    {
+      "category": "Redes sociales",
+      "name_es": "Optimización continua de contenido",
+      "name_en": "Continuous Content Optimization",
+      "name_pt": "Otimização Contínua de Conteúdo"
+    },
+    {
+      "category": "Producción y edición de video",
+      "name_es": "Producción de video",
+      "name_en": "Video Production",
+      "name_pt": "Produção de Vídeo"
+    },
+    {
+      "category": "Producción y edición de video",
+      "name_es": "Edición de video",
+      "name_en": "Video Editing",
+      "name_pt": "Edição de Vídeo"
+    },
+    {
+      "category": "Producción y edición de video",
+      "name_es": "Producción de video 4K",
+      "name_en": "4K Video Production",
+      "name_pt": "Produção de Vídeo 4K"
+    },
+    {
+      "category": "Producción y edición de video",
+      "name_es": "Videos corporativos",
+      "name_en": "Corporate Videos",
+      "name_pt": "Vídeos Corporativos"
+    },
+    {
+      "category": "Producción y edición de video",
+      "name_es": "Videos promocionales",
+      "name_en": "Promotional Videos",
+      "name_pt": "Vídeos Promocionais"
+    },
+    {
+      "category": "Producción y edición de video",
+      "name_es": "Videos para redes sociales",
+      "name_en": "Social Media Videos",
+      "name_pt": "Vídeos para Redes Sociais"
+    },
+    {
+      "category": "Producción y edición de video",
+      "name_es": "Videos para campañas de marca",
+      "name_en": "Brand Campaign Videos",
+      "name_pt": "Vídeos para Campanhas de Marca"
+    },
+    {
+      "category": "Producción y edición de video",
+      "name_es": "Edición cinematográfica",
+      "name_en": "Cinematic Editing",
+      "name_pt": "Edição Cinematográfica"
+    },
+    {
+      "category": "Producción y edición de video",
+      "name_es": "Narrativa audiovisual",
+      "name_en": "Visual Storytelling",
+      "name_pt": "Narrativa Audiovisual"
+    },
+    {
+      "category": "Producción y edición de video",
+      "name_es": "Animación de gráficos",
+      "name_en": "Motion Graphics Animation",
+      "name_pt": "Animação de Motion Graphics"
+    },
+    {
+      "category": "Producción y edición de video",
+      "name_es": "Transiciones y composiciones visuales",
+      "name_en": "Visual Transitions & Compositing",
+      "name_pt": "Transições e Composições Visuais"
+    },
+    {
+      "category": "Producción y edición de video",
+      "name_es": "Edición asistida por inteligencia artificial",
+      "name_en": "AI-Assisted Video Editing",
+      "name_pt": "Edição de Vídeo Assistida por IA"
+    },
+    {
+      "category": "Producción y edición de video",
+      "name_es": "Optimización de videos para plataformas",
+      "name_en": "Multi-Platform Video Optimization",
+      "name_pt": "Otimização de Vídeos para Plataformas"
+    },
+    {
+      "category": "Producción y edición de video",
+      "name_es": "Adaptación de formatos verticales y horizontales",
+      "name_en": "Vertical & Horizontal Format Adaptation",
+      "name_pt": "Adaptação para Formatos Verticais e Horizontais"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "Inteligencia artificial aplicada",
+      "name_en": "Applied Artificial Intelligence",
+      "name_pt": "Inteligência Artificial Aplicada"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "Consultoría de inteligencia artificial",
+      "name_en": "AI Consulting",
+      "name_pt": "Consultoria em Inteligência Artificial"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "Automatización de procesos con IA",
+      "name_en": "AI Process Automation",
+      "name_pt": "Automação de Processos com IA"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "Automatización de flujos de trabajo",
+      "name_en": "Workflow Automation",
+      "name_pt": "Automação de Fluxos de Trabalho"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "Automatización de contenidos",
+      "name_en": "Content Automation",
+      "name_pt": "Automação de Conteúdo"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "Generación de contenidos con IA",
+      "name_en": "AI Content Generation",
+      "name_pt": "Geração de Conteúdo com IA"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "Asistentes de inteligencia artificial",
+      "name_en": "AI Assistants",
+      "name_pt": "Assistentes de Inteligência Artificial"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "Chatbots inteligentes",
+      "name_en": "Intelligent Chatbots",
+      "name_pt": "Chatbots Inteligentes"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "Integración de motores de IA",
+      "name_en": "AI Engine Integration",
+      "name_pt": "Integração de Motores de IA"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "Análisis predictivo de datos",
+      "name_en": "Predictive Data Analytics",
+      "name_pt": "Análise Preditiva de Dados"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "Optimización mediante aprendizaje automático",
+      "name_en": "Machine Learning Optimization",
+      "name_pt": "Otimização com Machine Learning"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "Sistemas inteligentes de toma de decisiones",
+      "name_en": "Intelligent Decision Systems",
+      "name_pt": "Sistemas Inteligentes de Tomada de Decisão"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "Inteligencia empresarial",
+      "name_en": "Business Intelligence",
+      "name_pt": "Inteligência Empresarial"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "Automatización operativa",
+      "name_en": "Operational Automation",
+      "name_pt": "Automação Operacional"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "Flujos de IA adaptativos en tiempo real",
+      "name_en": "Real-Time Adaptive AI Workflows",
+      "name_pt": "Fluxos de IA Adaptativos em Tempo Real"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "IA aplicada a UX/UI",
+      "name_en": "AI-Enhanced UX/UI",
+      "name_pt": "IA Aplicada a UX/UI"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "Sistemas creativos potenciados por IA",
+      "name_en": "AI-Enhanced Creative Systems",
+      "name_pt": "Sistemas Criativos Potencializados por IA"
+    },
+    {
+      "category": "Inteligencia artificial aplicada",
+      "name_es": "Integraciones empresariales de IA",
+      "name_en": "Enterprise AI Integrations",
+      "name_pt": "Integrações Empresariais de IA"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Agenda ONE",
+      "name_en": "Agenda ONE",
+      "name_pt": "Agenda ONE"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Sistema corporativo de reservas",
+      "name_en": "Corporate Booking System",
+      "name_pt": "Sistema Corporativo de Reservas"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Reserva de salas de reuniones",
+      "name_en": "Meeting Room Booking",
+      "name_pt": "Reserva de Salas de Reunião"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Reserva de laboratorios",
+      "name_en": "Laboratory Booking",
+      "name_pt": "Reserva de Laboratórios"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Reserva de recursos corporativos",
+      "name_en": "Corporate Resource Booking",
+      "name_pt": "Reserva de Recursos Corporativos"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Disponibilidad en tiempo real",
+      "name_en": "Real-Time Availability",
+      "name_pt": "Disponibilidade em Tempo Real"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Gestión de empleados y agentes",
+      "name_en": "Employee & Agent Management",
+      "name_pt": "Gestão de Funcionários e Agentes"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Gestión de horarios y turnos",
+      "name_en": "Schedule & Shift Management",
+      "name_pt": "Gestão de Horários e Turnos"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Gestión de descansos",
+      "name_en": "Break-Time Management",
+      "name_pt": "Gestão de Intervalos"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Control de capacidad y aforo",
+      "name_en": "Capacity Management",
+      "name_pt": "Controle de Capacidade"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Control de acceso",
+      "name_en": "Access Control",
+      "name_pt": "Controle de Acesso"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Roles y permisos de usuarios",
+      "name_en": "User Roles & Permissions",
+      "name_pt": "Funções e Permissões de Usuários"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Recordatorios automáticos",
+      "name_en": "Automated Reminders",
+      "name_pt": "Lembretes Automáticos"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Notificaciones por SMS",
+      "name_en": "SMS Notifications",
+      "name_pt": "Notificações por SMS"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Confirmación de asistencia",
+      "name_en": "Attendance Confirmation",
+      "name_pt": "Confirmação de Presença"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Métricas de ocupación",
+      "name_en": "Occupancy Analytics",
+      "name_pt": "Métricas de Ocupação"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Reportes operativos",
+      "name_en": "Operational Reports",
+      "name_pt": "Relatórios Operacionais"
+    },
+    {
+      "category": "Agenda ONE y sistemas de reservas",
+      "name_es": "Sistema multilingüe ES, EN y PT",
+      "name_en": "Multilingual System: ES, EN & PT",
+      "name_pt": "Sistema Multilíngue: ES, EN e PT"
+    },
+    {
+      "category": "Hosting y servicios web",
+      "name_es": "Alojamiento web",
+      "name_en": "Web Hosting",
+      "name_pt": "Hospedagem Web"
+    },
+    {
+      "category": "Hosting y servicios web",
+      "name_es": "Hosting administrado",
+      "name_en": "Managed Hosting",
+      "name_pt": "Hospedagem Gerenciada"
+    },
+    {
+      "category": "Hosting y servicios web",
+      "name_es": "Administración de hosting",
+      "name_en": "Hosting Management",
+      "name_pt": "Administração de Hospedagem"
+    },
+    {
+      "category": "Hosting y servicios web",
+      "name_es": "Configuración de sitios en servidores",
+      "name_en": "Website Server Setup",
+      "name_pt": "Configuração de Sites em Servidores"
+    },
+    {
+      "category": "Hosting y servicios web",
+      "name_es": "Migración de sitios web",
+      "name_en": "Website Migration",
+      "name_pt": "Migração de Sites"
+    },
+    {
+      "category": "Hosting y servicios web",
+      "name_es": "Servicios web administrados",
+      "name_en": "Managed Web Services",
+      "name_pt": "Serviços Web Gerenciados"
+    },
+    {
+      "category": "Hosting y servicios web",
+      "name_es": "Soporte técnico web",
+      "name_en": "Web Technical Support",
+      "name_pt": "Suporte Técnico Web"
+    },
+    {
+      "category": "Dominios y certificados SSL",
+      "name_es": "Registro de dominios",
+      "name_en": "Domain Registration",
+      "name_pt": "Registro de Domínios"
+    },
+    {
+      "category": "Dominios y certificados SSL",
+      "name_es": "Administración de dominios",
+      "name_en": "Domain Management",
+      "name_pt": "Administração de Domínios"
+    },
+    {
+      "category": "Dominios y certificados SSL",
+      "name_es": "Renovación de dominios",
+      "name_en": "Domain Renewal",
+      "name_pt": "Renovação de Domínios"
+    },
+    {
+      "category": "Dominios y certificados SSL",
+      "name_es": "Configuración de DNS",
+      "name_en": "DNS Configuration",
+      "name_pt": "Configuração de DNS"
+    },
+    {
+      "category": "Dominios y certificados SSL",
+      "name_es": "Certificados SSL",
+      "name_en": "SSL Certificates",
+      "name_pt": "Certificados SSL"
+    },
+    {
+      "category": "Dominios y certificados SSL",
+      "name_es": "Instalación y renovación de SSL",
+      "name_en": "SSL Installation & Renewal",
+      "name_pt": "Instalação e Renovação de SSL"
+    },
+    {
+      "category": "Servicio integral ALL IN ONE",
+      "name_es": "Servicio integral ALL IN ONE",
+      "name_en": "ALL-IN-ONE Integrated Service",
+      "name_pt": "Serviço Integrado ALL IN ONE"
+    },
+    {
+      "category": "Servicio integral ALL IN ONE",
+      "name_es": "Departamento creativo externo",
+      "name_en": "Outsourced Creative Department",
+      "name_pt": "Departamento Criativo Terceirizado"
+    },
+    {
+      "category": "Servicio integral ALL IN ONE",
+      "name_es": "Diseño gráfico continuo",
+      "name_en": "Ongoing Graphic Design",
+      "name_pt": "Design Gráfico Contínuo"
+    },
+    {
+      "category": "Servicio integral ALL IN ONE",
+      "name_es": "Administración web continua",
+      "name_en": "Ongoing Website Management",
+      "name_pt": "Administração Web Contínua"
+    },
+    {
+      "category": "Servicio integral ALL IN ONE",
+      "name_es": "Gestión de redes sociales",
+      "name_en": "Social Media Management",
+      "name_pt": "Gestão de Redes Sociais"
+    },
+    {
+      "category": "Servicio integral ALL IN ONE",
+      "name_es": "Publicidad digital",
+      "name_en": "Digital Advertising",
+      "name_pt": "Publicidade Digital"
+    },
+    {
+      "category": "Servicio integral ALL IN ONE",
+      "name_es": "Hosting incluido",
+      "name_en": "Hosting Included",
+      "name_pt": "Hospedagem Incluída"
+    },
+    {
+      "category": "Servicio integral ALL IN ONE",
+      "name_es": "Soporte técnico y creativo",
+      "name_en": "Technical & Creative Support",
+      "name_pt": "Suporte Técnico e Criativo"
+    },
+    {
+      "category": "Servicio integral ALL IN ONE",
+      "name_es": "Gestión centralizada de proveedores",
+      "name_en": "Centralized Vendor Management",
+      "name_pt": "Gestão Centralizada de Fornecedores"
+    },
+    {
+      "category": "Servicio integral ALL IN ONE",
+      "name_es": "Una sola factura mensual",
+      "name_en": "One Monthly Invoice",
+      "name_pt": "Uma Única Fatura Mensal"
+    }
+  ]
+}

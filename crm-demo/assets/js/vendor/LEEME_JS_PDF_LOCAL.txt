@@ -1,0 +1,12 @@
+ONE HUB Community jsPDF 4.2.1 — biblioteca oficial MIT
+
+El archivo jspdf.umd.min.js no viene incluido en este parche porque debe descargarse del repositorio oficial de jsPDF. El archivo jspdf-local.php obtiene una copia oficial, verifica SHA Git y la guarda aquí cuando el sitio necesita generar el primer PDF.
+
+DESCARGA MANUAL, SI EL SERVIDOR NO TIENE CONEXIÓN SALIENTE:
+https://raw.githubusercontent.com/parallax/jsPDF/v4.2.1/dist/jspdf.umd.min.js
+Guardar el archivo exactamente como jspdf.umd.min.js en este directorio.
+
+El archivo oficial contiene sus atribuciones y licencia MIT.
+SHA1 del blob Git de v4.2.1: 0e600d49d2b2bf81dd97c1509e22d108c2ddd3b4
+
+Comprobación: /crm/assets/js/vendor/jspdf-local.php?check=1 o /crm-demo/assets/js/vendor/jspdf-local.php?check=1

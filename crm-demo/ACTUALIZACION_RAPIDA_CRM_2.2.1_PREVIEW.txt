@@ -1,0 +1,20 @@
+SÓCRATES CRM v2.2.1 — DOCUMENT PREVIEW FIX
+
+Base requerida: v2.2.0 COPILOT PROFESIONAL (con Document Manager 360° instalado).
+
+1. Haz un respaldo del sitio y MySQL.
+2. Sube TODO el contenido de la carpeta PROYECTOS/ sobre la raíz actual del CRM.
+3. Acepta reemplazar los archivos existentes.
+4. NO ejecutes install.php.
+5. NO ejecutes repair.php. Esta actualización no cambia la base de datos.
+6. Haz Ctrl+F5 y abre un documento.
+
+El nuevo visor usa document_preview.php y mantiene storage/documents protegido.
+PDF e imágenes: vista nativa segura.
+TXT/MD/LOG/código: texto embebido.
+CSV: tabla.
+DOCX: extracción local de texto.
+XLSX: primera hoja (hasta 250 filas / 50 columnas).
+PPTX: texto por diapositiva.
+ZIP: listado de contenido.
+DOC/XLS/PPT antiguos y formatos no renderizables: aviso profesional + descarga, sin visor roto.

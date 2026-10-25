@@ -1,0 +1,87 @@
+SÓCRATES CRM v2.1.0 — AUDITORÍA TÉCNICA DOCUMENT MANAGER 360°
+================================================================
+
+BASE UTILIZADA
+--------------
+- PROYECTOS.zip v2.0.1 entregado por el usuario como versión funcional oficial.
+- La integración se realizó sobre esa línea de código.
+- Se conserva CRM + Project Manager + Tour 360° y se agrega Gestión Documental.
+
+GESTIÓN DOCUMENTAL INCORPORADA
+------------------------------
+- Dashboard documental.
+- Biblioteca en vista lista/tarjetas.
+- Carpetas y subcarpetas.
+- Carga individual/múltiple y drag & drop.
+- Versionado completo y restauración.
+- Hash SHA-256 por versión.
+- Metadatos, categorías, estados, responsable y vencimiento.
+- Permisos por usuario, rol y departamento.
+- Comentarios y favoritos.
+- Compartidos conmigo.
+- Enlaces externos con token aleatorio, contraseña, expiración y límite de descargas.
+- Rutas secuenciales de aprobación.
+- Bandeja de aprobaciones.
+- Auditoría de acciones, IP y navegador.
+- Papelera y restauración.
+- Relación con clientes, contactos, proyectos, cotizaciones, contratos, tickets y servicios.
+- Panel de documentos relacionados en fichas operativas.
+- Alertas de vencimiento mediante CRON.
+- Almacenamiento protegido en storage/documents/.
+
+TOUR 360°
+---------
+- Tour ampliado de 36 a 41 pasos.
+- Ahora tiene 6 capítulos.
+- Nuevo capítulo 04: Gestión documental.
+- 5 pasos documentales incorporados al recorrido:
+  1. Dashboard documental.
+  2. KPI y estado documental.
+  3. Biblioteca tipo SharePoint.
+  4. Rutas de aprobación.
+  5. Auditoría y trazabilidad.
+- El tour respeta el permiso documents.view.
+- Manual 360° también fue ampliado con el módulo documental.
+
+VALIDACIONES AUTOMÁTICAS EJECUTADAS
+-----------------------------------
+- PHP: 196 archivos revisados con `php -l`; 0 errores de sintaxis.
+- JavaScript: 9 archivos revisados con `node --check`; 0 errores de sintaxis.
+- Referencias internas PHP detectadas (href/action/redirect/require): 1191; 0 destinos PHP faltantes.
+- ZIP de actualización verificado con `zip -T`: OK.
+- Schema: 12 tablas del Document Manager presentes:
+  document_folders, documents, document_versions, document_links,
+  document_permissions, document_comments, document_approval_routes,
+  document_approval_route_steps, document_approvals, document_approval_steps,
+  document_shares y document_audit.
+- repair.php incluye comprobación/migración de Gestión Documental.
+- Permisos documentales separados: view, upload, edit, delete, share, approve, manage, audit.
+- Tour: 41 pasos detectados, incluyendo 5 pasos del Document Manager.
+- Selectores principales del Tour documental verificados contra pantallas reales.
+- Branding importado revisado: no quedan referencias ONE HUB / VIREALTO en el módulo final.
+- Protección de almacenamiento revisada: .htaccess + web.config + acceso mediante PHP.
+- Tipos MIME, límite de tamaño, nombres físicos aleatorios y validación de ruta revisados.
+
+REVISIÓN FUNCIONAL ESTÁTICA
+---------------------------
+- Biblioteca: filtros, lista/tarjetas, favoritos, propios, compartidos y por vencer.
+- Carpetas: creación, edición y jerarquía.
+- Versiones: carga, historial y restauración.
+- Permisos: usuario, rol y departamento.
+- Aprobaciones: rutas y decisiones secuenciales.
+- Compartición externa: protección y expiración.
+- Auditoría: trazabilidad de acciones internas y externas.
+- Integraciones CRM: documentos relacionados visibles desde fichas compatibles.
+- Búsqueda global: documentos incluidos.
+- Configuración: tamaño máximo, alertas y visibilidad.
+- Manual y Tour: módulo documental incluido.
+
+LÍMITE DE LA AUDITORÍA
+----------------------
+No se ejecutó la migración contra la base MySQL real de producción de
+proyectos.socrates.la, porque este entorno no tiene acceso autorizado a esa base.
+Por lo tanto, la revisión confirma código, sintaxis, esquema, referencias, rutas,
+permisos, empaquetado e integración estática. La prueba final de base de datos debe
+hacerse ejecutando repair.php en el servidor, después de un respaldo.
+
+Versión auditada: 2.1.0

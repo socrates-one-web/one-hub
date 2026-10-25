@@ -1,0 +1,2 @@
+<?php
+declare(strict_types=1);require __DIR__.'/includes/bootstrap.php';require __DIR__.'/includes/auth.php';require_permission('contract_templates.manage');if($_SERVER['REQUEST_METHOD']!=='POST')redirect('contract_templates.php');verify_csrf();$id=(int)($_POST['id']??0);db()->prepare('UPDATE contract_templates SET is_active=IF(is_active=1,0,1) WHERE id=?')->execute([$id]);flash('success','Estado de la plantilla actualizado.');redirect('contract_templates.php');

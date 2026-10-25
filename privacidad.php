@@ -1,0 +1,7 @@
+<?php
+$content = [
+  'es'=>['title'=>'Privacidad','html'=>'<p>Este sitio presenta ONE HUB Community y facilita descargas gratuitas. No solicitamos datos de contacto para descargar. Si escribes a info@socrates.la, trataremos la información que envíes únicamente para responder. El hosting puede registrar datos técnicos de acceso y seguridad. Puedes solicitar información o eliminación conforme a la legislación aplicable. Esta política deberá ser revisada antes de una publicación definitiva.</p>'],
+  'pt'=>['title'=>'Privacidade','html'=>'<p>Este site apresenta ONE HUB Community e oferece downloads gratuitos. Não pedimos dados pessoais para baixar. Mensagens enviadas a info@socrates.la são usadas para responder ao contato. A hospedagem pode registrar dados técnicos para operação e segurança. Você pode solicitar informações ou exclusão conforme a legislação aplicável. Esta política deverá ser revisada antes de publicar a versão definitiva.</p>'],
+  'en'=>['title'=>'Privacy','html'=>'<p>This website presents ONE HUB Community and provides free downloads. No contact details are requested for downloading. Messages to info@socrates.la are used to reply to the sender. Hosting services may log technical access details for operation and security. You may request access or deletion as permitted by applicable law. Review this policy before a final public release.</p>'],
+];
+require __DIR__.'/legal_template.php';

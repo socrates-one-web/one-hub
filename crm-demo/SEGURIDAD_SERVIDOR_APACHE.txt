@@ -1,0 +1,29 @@
+SÓCRATES ONE CRM 1.7.0 — REGLAS RECOMENDADAS DEL SERVIDOR
+
+Estas reglas NO se instalan automáticamente en la raíz para no romper la configuración del hosting.
+Revísalas con el proveedor antes de incorporarlas en el .htaccess principal:
+
+Options -Indexes
+ServerSignature Off
+
+<FilesMatch "^(config\.php|\.env|composer\.(json|lock)|.*\.(sql|log|bak|ini))$">
+  Require all denied
+</FilesMatch>
+
+<FilesMatch "^(install|upgrade)\.php$">
+  Require all denied
+</FilesMatch>
+
+# Después de actualizar, restringe repair.php por IP o elimínalo.
+
+# HTTPS debe estar activo antes de habilitar HSTS permanentemente.
+# El CRM ya envía HSTS cuando detecta HTTPS.
+
+CONFIGURACIÓN EXTERNA RECOMENDADA
+- Cloudflare proxy + WAF + Bot Fight Mode.
+- Rate limiting para /login.php y /verify_2fa.php.
+- SFTP en lugar de FTP.
+- 2FA en el panel de hosting.
+- Firewall y Fail2ban.
+- Backups cifrados fuera del servidor.
+- PHP y MySQL en versiones soportadas.

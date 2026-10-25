@@ -1,0 +1,9 @@
+# ONE HUB Community — upload hardening. Apache 2.4+
+# Never let uploaded scripts, HTML, SVG or server-side templates execute or render.
+Options -Indexes
+<FilesMatch "\.(?i:php[0-9]?|phtml|phar|pht|cgi|pl|py|sh|exe|js|mjs|html?|shtml|xhtml|svgz?|asp|aspx|jsp)$">
+    Require all denied
+</FilesMatch>
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+</IfModule>

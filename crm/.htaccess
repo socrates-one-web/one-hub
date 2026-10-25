@@ -1,0 +1,17 @@
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^(?:includes|sql|storage)/ - [F,L]
+RewriteRule ^(?:README\.md|composer\.(?:json|lock))$ - [F,L,NC]
+</IfModule>
+
+<FilesMatch "(^\.|config\.php$|\.sql$|\.log$|\.ini$)">
+Require all denied
+</FilesMatch>
+
+<IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

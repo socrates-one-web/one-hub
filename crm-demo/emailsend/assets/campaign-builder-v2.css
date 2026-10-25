@@ -1,0 +1,94 @@
+
+/* EMAILSEND ONE v0.10.0 — CAMPAIGN BUILDER 2 */
+.ob2{--ob-blue:#0074c7;--ob-cyan:#31b4e7;--ob-green:#73bc25;--ob-orange:#ff5300;--ob-yellow:#f6bd00;--ob-navy:#002f57;--ob-ink:#17384f;--ob-muted:#728899;--ob-line:#dbe7ee;--ob-bg:#eef5f9;display:grid;grid-template-columns:230px minmax(520px,1fr) 300px;gap:0;min-height:690px;border:1px solid var(--ob-line);border-radius:14px;overflow:hidden;background:#fff}
+.ob2 *{box-sizing:border-box}
+.ob2-sidebar,.ob2-inspector{background:#fff;min-width:0}
+.ob2-sidebar{border-right:1px solid var(--ob-line);padding:14px;overflow:auto;max-height:calc(100vh - 170px)}
+.ob2-inspector{border-left:1px solid var(--ob-line);padding:15px;overflow:auto;max-height:calc(100vh - 170px)}
+.ob2-center{background:var(--ob-bg);min-width:0;display:flex;flex-direction:column}
+.ob2-side-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.ob2-side-head strong{font:800 14px 'Exo 2',sans-serif;color:var(--ob-navy)}
+.ob2-side-head small{display:block;font-size:10px;color:var(--ob-muted);margin-top:2px}
+.ob2-group{margin:15px 0}
+.ob2-group-title{font:800 9px 'Exo 2',sans-serif;letter-spacing:.14em;color:#6f8799;margin:0 0 8px}
+.ob2-palette{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.ob2-palette button{border:1px solid #d9e6ee;background:#fbfdff;border-radius:8px;padding:10px 6px;min-height:60px;display:grid;place-items:center;gap:4px;cursor:pointer;color:#415f73;font:700 10px 'Ubuntu Sans',sans-serif;transition:.15s}
+.ob2-palette button:hover{border-color:#77bce6;background:#f0f9ff;color:var(--ob-blue);transform:translateY(-1px)}
+.ob2-palette .ob2-palette-ico{font-size:20px;line-height:1;color:var(--ob-blue)}
+.ob2-palette button[data-kind="image"] .ob2-palette-ico,.ob2-palette button[data-kind="button"] .ob2-palette-ico{color:var(--ob-orange)}
+.ob2-palette button[data-kind="divider"] .ob2-palette-ico,.ob2-palette button[data-kind="spacer"] .ob2-palette-ico{color:var(--ob-green)}
+.ob2-template-list{display:grid;gap:7px}
+.ob2-template{border:1px solid #dbe7ee;background:#fff;border-radius:9px;padding:10px;text-align:left;cursor:pointer;display:flex;align-items:center;gap:10px}
+.ob2-template i{width:34px;height:34px;border-radius:8px;background:linear-gradient(135deg,#0074c7,#31b4e7);flex:none}
+.ob2-template:nth-child(2) i{background:linear-gradient(135deg,#ff5300,#f6bd00)}
+.ob2-template:nth-child(3) i{background:linear-gradient(135deg,#002f57,#73bc25)}
+.ob2-template strong{display:block;font:800 11px 'Exo 2',sans-serif;color:#17384f}.ob2-template small{font-size:10px;color:#7890a1}
+.ob2-canvasbar{height:42px;background:#fff;border-bottom:1px solid var(--ob-line);display:flex;align-items:center;justify-content:space-between;padding:0 14px;font-size:11px;color:#6a8395}
+.ob2-canvasbar strong{color:#31546b}.ob2-canvasbar .ob2-live{display:flex;align-items:center;gap:6px}.ob2-canvasbar .ob2-live:before{content:"";width:9px;height:9px;border-radius:50%;background:#73bc25;box-shadow:0 0 0 3px #e8f6dd}
+.ob2-stage{flex:1;padding:22px;overflow:auto;display:flex;justify-content:center;align-items:flex-start}
+.ob2-device{width:680px;max-width:100%;min-height:620px;background:#fff;border-radius:5px;box-shadow:0 16px 45px rgba(18,60,88,.16);transition:width .2s}
+.ob2-device.is-mobile{width:390px}
+.ob2-page{padding:20px;min-height:620px}
+.ob2-empty{min-height:540px;border:2px dashed #c9dae5;border-radius:10px;display:grid;place-items:center;text-align:center;padding:30px;color:#7d91a0}
+.ob2-empty strong{display:block;font:800 18px 'Exo 2',sans-serif;color:#345a73;margin-bottom:6px}
+.ob2-block{position:relative;border:2px solid transparent;border-radius:7px;margin:0;cursor:pointer;transition:border-color .12s,box-shadow .12s;background:#fff}
+.ob2-block:hover{border-color:#a6d5f2}
+.ob2-block.is-selected{border-color:#31b4e7;box-shadow:0 0 0 2px rgba(49,180,231,.12)}
+.ob2-block.is-dragging{opacity:.45}
+.ob2-block-drop-before{box-shadow:0 -4px 0 #ff5300}
+.ob2-block-drop-after{box-shadow:0 4px 0 #ff5300}
+.ob2-block-tag{position:absolute;left:-2px;top:-21px;background:#31b4e7;color:#fff;border-radius:5px 5px 0 0;padding:3px 7px;font:800 8px 'Exo 2',sans-serif;letter-spacing:.08em;opacity:0;pointer-events:none}
+.ob2-block.is-selected .ob2-block-tag{opacity:1}
+.ob2-block-tools{position:absolute;right:5px;top:5px;z-index:8;display:flex;gap:4px;opacity:0;transition:.12s}
+.ob2-block:hover .ob2-block-tools,.ob2-block.is-selected .ob2-block-tools{opacity:1}
+.ob2-block-tools button{width:28px;height:28px;border:1px solid #cbdbe5;background:#fff;border-radius:6px;cursor:pointer;color:#527087;font-size:13px}
+.ob2-block-tools button:hover{background:#eef7fc;color:#0074c7}
+.ob2-block-tools .danger:hover{background:#fff2ef;color:#d84324;border-color:#ffcabc}
+.ob2-img-wrap{min-height:100px;display:grid;place-items:center;overflow:hidden}
+.ob2-img-wrap img{display:block;max-width:100%;height:auto}
+.ob2-img-placeholder{width:100%;min-height:180px;background:linear-gradient(135deg,#f5f9fb,#eef5f9);display:grid;place-items:center;border:1px dashed #bdd3e1;color:#6d8798;text-align:center;padding:20px}
+.ob2-img-placeholder b{display:block;font:800 14px 'Exo 2',sans-serif;color:#45667d;margin-bottom:4px}
+.ob2-image-broken{background:#fff7f4;border:1px dashed #f0a48d;color:#a84b32}
+.ob2-render-text{word-break:break-word}
+.ob2-btn-preview{display:inline-block;text-decoration:none!important}
+.ob2-columns-preview{display:grid;gap:0}.ob2-columns-preview.cols-1{grid-template-columns:1fr}.ob2-columns-preview.cols-2{grid-template-columns:1fr 1fr}.ob2-columns-preview.cols-3{grid-template-columns:repeat(3,1fr)}
+.ob2-column-cell{min-height:90px;border:1px dashed #c6d9e5;padding:14px;color:#6d8495;font-size:12px}.ob2-column-cell+.ob2-column-cell{border-left:0}
+.ob2-column-cell strong{display:block;color:#47677e;margin-bottom:4px}
+.ob2-inspector-empty{display:grid;place-items:center;text-align:center;min-height:300px;color:#7e93a2;padding:20px}
+.ob2-inspector-empty strong{display:block;color:#3d6179;font:800 15px 'Exo 2',sans-serif;margin-bottom:5px}
+.ob2-inspector-title{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--ob-line);padding-bottom:11px;margin-bottom:14px}
+.ob2-inspector-title strong{font:800 14px 'Exo 2',sans-serif;color:#173e5b}.ob2-inspector-title span{font:800 8px 'Exo 2',sans-serif;background:#e7f6ff;color:#0074c7;padding:5px 7px;border-radius:999px;letter-spacing:.1em}
+.ob2-field{display:grid;gap:5px;margin:0 0 11px}.ob2-field>span{font:700 10px 'Ubuntu Sans',sans-serif;color:#4c697d}.ob2-field input,.ob2-field textarea,.ob2-field select{width:100%;border:1px solid #cadbe5;border-radius:7px;background:#fff;padding:9px 10px;font:500 12px 'Ubuntu Sans',sans-serif;color:#183a51;outline:0}.ob2-field textarea{min-height:86px;resize:vertical}.ob2-field input:focus,.ob2-field textarea:focus,.ob2-field select:focus{border-color:#31b4e7;box-shadow:0 0 0 3px rgba(49,180,231,.1)}
+.ob2-field-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ob2-color-row{display:grid;grid-template-columns:44px 1fr;gap:7px}.ob2-color-row input[type=color]{height:38px;padding:3px}
+.ob2-upload{border:1px dashed #9fc7df;background:#f6fbfe;border-radius:8px;padding:11px;display:block;cursor:pointer;font:700 11px 'Ubuntu Sans',sans-serif;color:#35637f}.ob2-upload input{display:none}
+.ob2-upload-status{margin-top:7px;padding:8px 9px;border-radius:7px;font-size:10px;line-height:1.4;background:#eff8fd;color:#3a6680;display:none}.ob2-upload-status.is-show{display:block}.ob2-upload-status.ok{background:#eff9e9;color:#3d741f}.ob2-upload-status.err{background:#fff2ef;color:#a94129}
+.ob2-inspector-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:14px;padding-top:12px;border-top:1px solid var(--ob-line)}
+.ob2-mini-btn{border:1px solid #cbdce6;background:#fff;border-radius:7px;padding:8px 9px;font:700 10px 'Ubuntu Sans',sans-serif;color:#47667d;cursor:pointer}.ob2-mini-btn:hover{background:#f1f8fc}.ob2-mini-btn.danger{color:#c23f25;border-color:#f2c2b6;background:#fff8f6}
+.ob2-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:1px solid #dbe7ee;border-radius:12px;padding:9px 11px;margin-bottom:10px;position:sticky;top:0;z-index:50}
+.ob2-brand{display:flex;align-items:center;gap:9px}.ob2-brand-icon{width:35px;height:35px;border-radius:8px;display:grid;place-items:center;background:#e8f6ff;color:#0074c7;font-size:18px}.ob2-brand strong{display:block;font:800 13px 'Exo 2',sans-serif;color:#153b57}.ob2-brand small{display:block;font-size:9px;color:#768c9d;margin-top:2px}
+.ob2-actions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.ob2-actions button{min-height:34px}
+.ob2-toolbar .is-active{background:#e9f7ff!important;color:#0074c7!important;border-color:#9bd5f4!important}
+.ob2-code-modal,.ob2-preview-modal{position:fixed;inset:0;z-index:120000;background:rgba(1,21,37,.64);display:none;place-items:center;padding:20px}.ob2-code-modal.is-open,.ob2-preview-modal.is-open{display:grid}
+.ob2-code-box,.ob2-preview-box{width:min(900px,96vw);max-height:92vh;background:#fff;border-radius:16px;box-shadow:0 25px 80px rgba(0,0,0,.28);overflow:hidden}
+.ob2-code-head,.ob2-preview-head{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid #dae6ed}.ob2-code-head strong,.ob2-preview-head strong{font:800 15px 'Exo 2',sans-serif;color:#173e5b}
+.ob2-code-body{padding:16px}.ob2-code-body textarea{width:100%;height:390px;border:1px solid #c9dbe5;border-radius:8px;padding:12px;font:12px/1.55 Consolas,monospace}
+.ob2-modal-actions{display:flex;justify-content:flex-end;gap:8px;padding:13px 16px;border-top:1px solid #dae6ed}
+.ob2-preview-box{width:min(1100px,97vw)}.ob2-preview-body{height:78vh;background:#e9f0f4;padding:18px}.ob2-preview-body iframe{display:block;width:100%;height:100%;border:0;background:#fff;margin:auto}.ob2-preview-body.is-mobile iframe{max-width:390px}
+.ob2-top-save-state{font-size:10px;color:#6b8395;margin-right:5px}.ob2-top-save-state.is-dirty{color:#c17b00}
+html[data-theme="dark"] .ob2,body.theme-dark .ob2{--ob-bg:#071b2b;--ob-line:#294b62;background:#0d2942;color:#eaf4fa}
+html[data-theme="dark"] .ob2-sidebar,html[data-theme="dark"] .ob2-inspector,html[data-theme="dark"] .ob2-toolbar,html[data-theme="dark"] .ob2-canvasbar{background:#0e2a43;border-color:#294b62}
+html[data-theme="dark"] .ob2-palette button,html[data-theme="dark"] .ob2-template,html[data-theme="dark"] .ob2-field input,html[data-theme="dark"] .ob2-field textarea,html[data-theme="dark"] .ob2-field select,html[data-theme="dark"] .ob2-mini-btn{background:#102e47;border-color:#31536a;color:#c9dbe6}
+html[data-theme="dark"] .ob2-side-head strong,html[data-theme="dark"] .ob2-inspector-title strong,html[data-theme="dark"] .ob2-brand strong{color:#edf7fd}
+html[data-theme="dark"] .ob2-device{background:#fff}
+@media(max-width:1180px){.ob2{grid-template-columns:200px minmax(470px,1fr) 270px}}
+@media(max-width:950px){.ob2{grid-template-columns:180px minmax(430px,1fr)}.ob2-inspector{position:fixed;right:12px;top:90px;bottom:12px;width:310px;z-index:80;box-shadow:0 16px 50px rgba(0,0,0,.2);border:1px solid #cfe0ea;border-radius:12px}.ob2-inspector.is-hidden{display:none}}
+@media(max-width:720px){.ob2{display:block}.ob2-sidebar{max-height:none;border-right:0;border-bottom:1px solid var(--ob-line)}.ob2-palette{grid-template-columns:repeat(4,1fr)}.ob2-center{min-height:620px}.ob2-stage{padding:12px}.ob2-toolbar{position:static}.ob2-brand small{display:none}}
+
+
+/* EMAILSEND ONE v0.10.2 — uploader real en iframe */
+.ob2-uploader-box{margin:8px 0 11px}
+.ob2-uploader-label{font:800 10px 'Ubuntu Sans',sans-serif;color:#4c697d;margin-bottom:6px}
+.ob2-uploader-frame{display:block;width:100%;height:102px;border:0;background:transparent;overflow:hidden}
+.ob2-uploader-box .ob2-upload-status{margin-top:5px}
+html[data-theme="dark"] .ob2-uploader-label{color:#bfd1dd}
