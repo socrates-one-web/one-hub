@@ -1,0 +1,74 @@
+name: Import reviewed RC2 source
+on:
+  push:
+    paths:
+      - '.github/workflows/import-rc2-source.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out existing project documentation
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Import and verify source from existing RC2 draft asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          BRANCH="review/one-hub-rc2-source"
+          ASSET_ID="674466190"
+          EXPECTED="b0e0598d9d0c1df56618b79ca5a534e42987f6361faf6102328f8a879b3db3c9"
+          REPOSITORY="socrates-one-web/one-hub"
+          if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
+            echo "Branch already exists; no overwrite performed."
+            exit 1
+          fi
+          curl --retry 3 --fail --location --silent --show-error \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/octet-stream" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/$REPOSITORY/releases/assets/$ASSET_ID" \
+            -o /tmp/one-hub-rc2.zip
+          printf '%s  %s\n' "$EXPECTED" /tmp/one-hub-rc2.zip | sha256sum -c -
+          python3 - <<'PY'
+          import zipfile, pathlib, re
+          z=zipfile.ZipFile('/tmp/one-hub-rc2.zip')
+          names=z.namelist()
+          assert 'crm/index.php' in names and 'crm-demo/index.php' in names and 'LICENSE' in names
+          for n in names:
+              parts=pathlib.PurePosixPath(n).parts
+              assert not n.startswith('/') and '..' not in parts and '\\' not in n, n
+              assert not re.search(r'(^|/)(config\.php|\.env(?:\..*)?|admwebla_.*\.sql|.*\.pem|.*\.p12)$', n, re.I), n
+          z.extractall('/tmp/rc2-package')
+          print('Validated archive entries:', len(names))
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch --create "$BRANCH"
+          # Keep repository-level README, license, notices and existing documentation.
+          rsync -a \
+            --exclude='/README.md' \
+            --exclude='/LICENSE' \
+            --exclude='/THIRD_PARTY_NOTICES.md' \
+            --exclude='/downloads/' \
+            /tmp/rc2-package/ ./
+          # Do not stage any secret, runtime or customer data (see .gitignore).
+          git add --all
+          if git diff --cached --name-only | grep -Ei '(^|/)(config\.php|\.env|admwebla_.*\.sql)$'; then
+            echo "Refusing to import unexpected sensitive file."
+            exit 1
+          fi
+          if ! git diff --cached --name-only | grep -q '^crm/assets/js/vendor/jspdf.umd.min.js$'; then
+            echo "Local jsPDF is missing; aborting."
+            exit 1
+          fi
+          git commit -m "Import ONE HUB Community RC2 source for review"
+          git push --set-upstream origin "$BRANCH"
+          echo "Created review branch: $BRANCH"
