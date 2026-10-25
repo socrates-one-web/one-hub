@@ -40,4 +40,4 @@ Thumbs.db
 .idea/
 .vscode/
 node_modules/
-vendor/
+/vendor/   # Only a root-level Composer vendor directory; keep crm/assets/js/vendor/jspdf.umd.min.js
