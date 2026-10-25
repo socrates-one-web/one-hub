@@ -38,6 +38,11 @@
 - [x] Instalar parche RC1.1 (confirmación del usuario el 25/10/2026)
 - [ ] Probar rechazo SVG y aceptación de PNG/JPG/WEBP, examinar SVG existentes y otros archivos públicos
 
+## Limpieza posterior a la instalación (instancias públicas)
+- [ ] **Archivos de diagnóstico y de instalación:** comprobar que ya no son accesibles `verificar-servidor.php`, `crm/diagnostico.php`, `crm-demo/diagnostico.php`, `crm/install.php` y `crm-demo/install.php` una vez finalizada la instalación.
+- [ ] Rechazo de nuevas cargas SVG con RC1.1 y aceptación de PNG/JPG/WEBP comprobados en el servidor.
+- [ ] Comprobar que no quedan archivos SVG previamente subidos ni archivos personales accesibles directamente.
+
 ## Entregables
 - [ ] Código fuente auditable y directorios documentados
 - [ ] CLEAN: paquete de instalación sin registros comerciales
