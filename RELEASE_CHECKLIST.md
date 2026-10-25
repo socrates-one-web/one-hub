@@ -31,8 +31,11 @@
 - [x] Generados ZIP COMPLETO, CLEAN y DEMO para revisión privada con AGPL-3.0, DEMO V1.7 y PDF V2.1
 - [x] Validación estática: 407 PHP y 25 JavaScript sin errores de sintaxis; archivos ZIP íntegros
 - [x] No se encontraron configuraciones activas ni SQL de producción en estos ZIP
-- [ ] Probar desde cero los ZIP exactos del RC1 antes de publicar una Release
-- [ ] Revisar seguridad de carga de SVG y gestión de archivos públicos
+- [x] Instalación del ZIP COMPLETO RC1: CLEAN y DEMO arrancan, confirmado con capturas del usuario (25/10/2026)
+- [ ] Probar los ZIP independientes CLEAN y DEMO si se publicarán separados
+- [ ] Completar pruebas de módulos, permisos y archivos del paquete instalado antes de publicar una Release
+- [x] Detectado SVG sin sanitizar; preparado parche RC1.1 para impedir nuevas cargas SVG por instalador y ajustes
+- [ ] Instalar y comprobar el parche RC1.1, y examinar SVG existentes y otros archivos públicos
 
 ## Entregables
 - [ ] Código fuente auditable y directorios documentados
