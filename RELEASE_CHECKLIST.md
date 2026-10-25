@@ -106,4 +106,6 @@ Detalles y checksums en [Preparación v1.0.0](docs/PREPARACION_V1.0.0_ESTABLE.md
 - [x] Creado `.github/FUNDING.yml` con `github: socrates-one-web` para mostrar el patrocinio del repositorio.
 - [x] README y documento de financiación actualizados para enlazar la página pública.
 - [ ] Confirmar visualmente el botón Sponsor en la página pública del repositorio (la conexión no permite inspeccionar el navegador).
-- [ ] Integrar el enlace en la instalación web de Ferozo y agregar Stripe, Ko-fi o PIX cuando sus enlaces oficiales sean remitidos.
+- [x] Integrar GitHub Sponsors, Stripe y Mercado Pago en `index.php` de la landing del repositorio, con traducciones ES/PT/EN y estilos responsive; commit `ff452950c51e05321a0a415911c4133dbe939b6d`.
+- [x] Añadir Stripe y Mercado Pago a `.github/FUNDING.yml` como enlaces personalizados.
+- [ ] Subir los 3 archivos de la landing actualizados a Ferozo si no existe despliegue automático, y comprobar las pasarelas de pago desde la web publicada.
