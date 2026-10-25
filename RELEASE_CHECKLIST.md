@@ -1,6 +1,6 @@
 # ONE HUB Community — Checklist de publicación
 
-**Estado:** RC2 pública publicada. El titular confirma completadas las tres verificaciones críticas para v1.0.0 estable. Los paquetes estables están preparados y la publicación de una nueva Release v1.0.0 en GitHub sigue pendiente.
+**Estado:** ONE HUB Community **v1.0.0 STABLE publicado el 25/10/2026**: https://github.com/socrates-one-web/one-hub/releases/tag/v1.0.0. Los ZIP CLEAN, DEMO y COMPLETO y el archivo SHA-256 están públicos; RC2 se conserva como versión candidata histórica.
 
 **Confirmación del titular (25/10/2026):** se marcaron como completados los 14 controles que figuraban pendientes en las secciones **Software y derechos**, **Seguridad y privacidad** y **PDF de cotizaciones**. Estos controles se registran sobre la base de su declaración expresa; el asistente no afirma haber ejecutado personalmente las pruebas, auditorías ni revisiones legales.
 
@@ -73,7 +73,7 @@
 - [ ] Publicar campaña de lanzamiento ES/PT/EN y video de demostración
 - [ ] Definir proceso público para Issues, cambios y seguimiento de nuevas versiones
 
-**Aprobación de estabilidad:** el titular confirmó la resolución de los tres grupos críticos (seguridad, licencias de terceros e instalación/paquetes) el 25/10/2026. Esta confirmación habilita a preparar una nueva Release estable, sin afirmar una auditoría independiente. Las demás casillas sin marcar se conservan como historial de tareas y mejoras que no son automáticamente bloqueantes. Antes de afirmar públicamente que `v1.0.0` está publicada, verificar su Release y enlaces en GitHub.
+**Aprobación de estabilidad:** el titular confirmó la resolución de los tres grupos críticos (seguridad, licencias de terceros e instalación/paquetes) el 25/10/2026. Esta confirmación habilita a preparar una nueva Release estable, sin afirmar una auditoría independiente. Las demás casillas sin marcar se conservan como historial de tareas y mejoras que no son automáticamente bloqueantes. La Release `v1.0.0` estable fue verificada en GitHub: https://github.com/socrates-one-web/one-hub/releases/tag/v1.0.0.
 
 ## Registro de publicación GitHub (25/10/2026)
 - [x] Código fuente incluido en 640 archivos del repositorio, 300 por edición; commit `151e528873a261da1a9c652017c4ffb630a62950`.
@@ -88,7 +88,15 @@
 - [x] Inventario y licencias de terceros: resueltos conforme a confirmación expresa del titular.
 - [x] Instalación en Ferozo, autorizaciones y correspondencia de ZIP con la versión probada: resueltos conforme a confirmación expresa del titular.
 - [x] Paquetes v1.0.0 estables reempaquetados desde RC2 sin cambios funcionales; hashes y notas preparados.
-- [ ] Crear y publicar en GitHub nueva Release `v1.0.0` **estable** con sus tres ZIP y checksum.
-- [ ] Validar los enlaces públicos de la Release estable y actualizar `os.socrates.la`.
+- [x] Crear y publicar en GitHub nueva Release `v1.0.0` **estable** con sus tres ZIP y checksum (25/10/2026).
+- [x] GitHub confirma los enlaces públicos de los tres ZIP y SHA256SUMS de la Release estable, con digests SHA-256 publicados.
+- [ ] Verificar en el sitio `os.socrates.la` que sus enlaces ya apunten a la versión estable (comprobación web externa pendiente).
 
 Detalles y checksums en [Preparación v1.0.0](docs/PREPARACION_V1.0.0_ESTABLE.md).
+
+## Verificación del lanzamiento estable — GitHub (25/10/2026)
+- [x] Release `v1.0.0` visible y pública; GitHub informa `draft=false`, `prerelease=false`.
+- [x] Cuatro adjuntos con estado `uploaded` y SHA-256 exactamente iguales a los del kit estable aprobado.
+- [x] RC2 preservada como pre-release histórica.
+- [ ] Prueba independiente de descarga de ZIP desde navegador externo (no equivale a la disponibilidad verificada mediante API GitHub).
+

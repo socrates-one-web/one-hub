@@ -1,3 +1,12 @@
+## v1.0.0 — Stable Release pública (2026-10-25)
+
+- **Primera versión estable** publicada en GitHub: https://github.com/socrates-one-web/one-hub/releases/tag/v1.0.0.
+- CLEAN, DEMO y COMPLETO disponibles como ZIP, junto con archivo de checksums SHA-256.
+- Los tres ZIP coinciden por tamaño y huella SHA-256 con los paquetes estables preparados anteriormente.
+- El titular confirmó completados los controles críticos de seguridad, licencias y validación de instalación; sin afirmar auditoría de terceros.
+- **Sin alteraciones funcionales respecto de RC2**; se actualizaron las instrucciones de distribución y paquetes ZIP internos del COMPLETO.
+- La pre-release histórica `v1.0.0-rc.2` permanece disponible.
+
 ## v1.0.0-rc.2 — Pre-release pública en GitHub (2026-10-25)
 
 - Código fuente RC2 completo publicado en `main` con CLEAN, DEMO, EMAILSEND, landing y jsPDF offline.
@@ -7,7 +16,7 @@
 
 # CHANGELOG — ONE HUB Community
 
-Este registro documenta la preparación pública del proyecto. **No hay aún una versión estable publicada como GitHub Release**.
+Este registro conserva las notas históricas de la preparación RC1/RC2 y documenta la primera versión estable publicada.
 
 ## [Unreleased] — v1.0.0-RC1 (revisión privada, 2026-10-25)
 

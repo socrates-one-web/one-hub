@@ -2,22 +2,22 @@
 
 ## Estado de publicación (25 de octubre de 2026)
 
-La edición Community **v1.0.0-rc.2 ya está publicada en GitHub como pre-release pública**. El código completo de CLEAN, DEMO, EMAILSEND y landing está disponible en la rama `main` bajo AGPL-3.0-only para el código original. GitHub confirmó cuatro adjuntos y sus hashes: CLEAN, DEMO, COMPLETO y SHA256SUMS.txt. **No crear una segunda Release RC2 ni reemplazar los ZIP existentes.**
+**ONE HUB Community v1.0.0 está oficialmente publicado como Stable Release en GitHub**, junto a sus versiones CLEAN, DEMO, COMPLETO y archivo SHA-256. El código fuente está publicado en la rama `main`, con GNU AGPL-3.0-only para el código propio. La versión candidata anterior `v1.0.0-rc.2` se mantiene para trazabilidad.
 
-**Release:** https://github.com/socrates-one-web/one-hub/releases/tag/v1.0.0-rc.2
+**Versión estable:** https://github.com/socrates-one-web/one-hub/releases/tag/v1.0.0
 
-| Paquete / Package | Descarga / Download | SHA-256 |
-|---|---|---|
-| **CLEAN** | [ZIP CLEAN](https://github.com/socrates-one-web/one-hub/releases/download/v1.0.0-rc.2/ONE_HUB_COMMUNITY_CLEAN_v1.0.0-rc.2.zip) | `b9a0929b8d7449a7c3ee4b37a689b7acf4aba4c16d92d8eb2ed41d66742e16b0` |
-| **DEMO** | [ZIP DEMO](https://github.com/socrates-one-web/one-hub/releases/download/v1.0.0-rc.2/ONE_HUB_COMMUNITY_DEMO_v1.0.0-rc.2.zip) | `19584f3eaf2217cff0928b8dcd6e7889b94c42305fdb03fe771b0e1a14f83674` |
-| **COMPLETO** | [ZIP COMPLETO](https://github.com/socrates-one-web/one-hub/releases/download/v1.0.0-rc.2/ONE_HUB_COMMUNITY_COMPLETO_v1.0.0-rc.2.zip) | `b0e0598d9d0c1df56618b79ca5a534e42987f6361faf6102328f8a879b3db3c9` |
-| **Checksum file** | [SHA256SUMS.txt](https://github.com/socrates-one-web/one-hub/releases/download/v1.0.0-rc.2/SHA256SUMS.txt) | `215954cd09c11fd573a3f2a3b092caad7e67c8ae47dab7251e8a6ded229f4208` |
+| Edición / Edition | Descarga / Download | SHA-256 |
+| --- | --- | --- |
+| **CLEAN** | [ONE_HUB_COMMUNITY_CLEAN_v1.0.0.zip](https://github.com/socrates-one-web/one-hub/releases/download/v1.0.0/ONE_HUB_COMMUNITY_CLEAN_v1.0.0.zip) | `f2d2634e6dfd28a3968c548809e4649069e6654d413516ed44063920119eed5f` |
+| **DEMO** | [ONE_HUB_COMMUNITY_DEMO_v1.0.0.zip](https://github.com/socrates-one-web/one-hub/releases/download/v1.0.0/ONE_HUB_COMMUNITY_DEMO_v1.0.0.zip) | `826c360bd1c5a68b29161d783b77f591e722a191570bdc6f8e40e6b8e057aed6` |
+| **COMPLETO** | [ONE_HUB_COMMUNITY_COMPLETO_v1.0.0.zip](https://github.com/socrates-one-web/one-hub/releases/download/v1.0.0/ONE_HUB_COMMUNITY_COMPLETO_v1.0.0.zip) | `bbf703610f51ace723e1aa1065a263a6cc53c2559ac82a43df6b48321b63cd92` |
+| **SHA256SUMS** | [Checksum](https://github.com/socrates-one-web/one-hub/releases/download/v1.0.0/ONE_HUB_COMMUNITY_v1.0.0_SHA256SUMS.txt) | `dc9e211c2c38af283c2523d002d055928665285cb95767a7ff6e6d303d66dbab` |
 
-Se confirmó por el titular que ya se efectuó una prueba real de instalación y autorización en Ferozo. Las revisiones legales, la auditoría especializada de seguridad y la certificación de producción son controles independientes, necesarios antes de una versión estable.
+Los SHA-256 coinciden con los paquetes estables aprobados; falta comprobar una descarga completa externa. El titular confirmó ya realizados los controles críticos de instalación, autorizaciones, licencias y seguridad. No se afirma auditoría externa.
 
 ## Próximas acciones de difusión
 
-1. Actualizar las descargas del sitio https://os.socrates.la/ para que apunten a esta Release publicada; no alterar el sistema CLEAN/DEMO ya instalado.
+1. Comprobar que las descargas del sitio https://os.socrates.la/ apunten a la [Release estable](https://github.com/socrates-one-web/one-hub/releases/tag/v1.0.0); no alterar el sistema CLEAN/DEMO ya instalado.
 2. Verificar la descarga completa de cada ZIP desde fuera de GitHub y calcular los SHA-256 recibidos. GitHub ya publica los hashes y los archivos, pero esta prueba externa no está registrada.
 3. Presentar ONE HUB como **software gratuito y open source en versión candidata**, con licencia AGPL-3.0-only, y aclarar que las donaciones son voluntarias.
 4. Mantener un canal público de errores en https://github.com/socrates-one-web/one-hub/issues.

@@ -1,6 +1,6 @@
 # Financiación voluntaria
 
-ONE HUB Community distribuye gratuitamente su código bajo **GNU AGPL-3.0-only** para el código propio. La **pre-release pública v1.0.0-rc.2** se publicó el 25/10/2026: https://github.com/socrates-one-web/one-hub/releases/tag/v1.0.0-rc.2.
+ONE HUB Community distribuye gratuitamente su código bajo **GNU AGPL-3.0-only** para el código propio. La **versión estable v1.0.0** se publicó el 25/10/2026: https://github.com/socrates-one-web/one-hub/releases/tag/v1.0.0. La pre-release RC2 permanece disponible como historial.
 
 ## Patrocinio
 

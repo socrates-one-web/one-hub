@@ -1,7 +1,7 @@
 # Preparación de ONE HUB Community v1.0.0 estable
 
-**25 de octubre de 2026 · Estado: lista para crear una nueva Release estable.**
-**IMPORTANTE:** este documento no implica que la etiqueta v1.0.0 ya se haya publicado. Antes de anunciarla, comprobar que existe realmente la Release GitHub.
+**25 de octubre de 2026 · Estado: RELEASE ESTABLE PUBLICADA.**
+**PUBLICACIÓN CONFIRMADA:** https://github.com/socrates-one-web/one-hub/releases/tag/v1.0.0. GitHub informa que no es borrador ni pre-release y muestra los cuatro adjuntos con sus SHA-256.
 
 ## Aprobación del titular
 
@@ -32,7 +32,7 @@ Todos los demás miembros ZIP conservan idéntico contenido binario respecto de 
 
 Subir también `ONE_HUB_COMMUNITY_v1.0.0_SHA256SUMS.txt`.
 
-## Pasos de publicación en GitHub
+## Registro histórico: pasos utilizados para publicar en GitHub
 
 1. Abrir https://github.com/socrates-one-web/one-hub/releases/new
 2. En **Choose a tag**, escribir `v1.0.0` y elegir **Create new tag on publish**, sobre `main`.
@@ -44,3 +44,7 @@ Subir también `ONE_HUB_COMMUNITY_v1.0.0_SHA256SUMS.txt`.
 8. Actualizar la página https://os.socrates.la/ y la documentación para apuntar a las descargas estables.
 
 Las donaciones, la publicidad y GitHub Sponsors son iniciativas opcionales, independientes de la versión estable.
+
+## Verificación posterior — 25/10/2026
+
+GitHub publica la versión estable `v1.0.0` con tres ZIP instalables y el archivo de comprobación. Las tres huellas SHA-256 de la tabla anterior coinciden con las devueltas por la API de GitHub. La versión candidata RC2 continúa publicada por separado.
